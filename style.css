@@ -6,6 +6,12 @@
 
 body {
     height: 100vh;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body > * {
+    padding: 10px;
 }
 
 header {
@@ -13,16 +19,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: lightcyan;
+    background: rgb(49, 65, 133);
+    color: white;
     border-bottom: 1px solid lightgray;
     box-shadow: 0 2px 5px lightgray;
 }
 
+
 main {
     margin-top: 10px;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
 }

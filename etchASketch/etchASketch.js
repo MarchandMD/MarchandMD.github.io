@@ -82,5 +82,5 @@ allMainDivs.forEach((option) => {
 console.log(allMainDivs.length);
 
 const valuesNL = document.querySelectorAll('[value]');
-console.log(valuesNL[2].textContent);
+console.log(valuesNL);
 
