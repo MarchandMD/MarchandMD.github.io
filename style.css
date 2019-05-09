@@ -10,10 +10,6 @@ body {
     margin: 0 auto;
 }
 
-body > * {
-    padding: 10px;
-}
-
 header {
     height: 10vh;
     display: flex;
@@ -28,4 +24,13 @@ header {
 
 main {
     margin-top: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    list-style: none;
 }
