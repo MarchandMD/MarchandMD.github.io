@@ -21,15 +21,30 @@ header {
     box-shadow: 2px 2px 5px gray;
 }
 
-.contact>a {
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    background: hsl(229, 46%, 66%);
+}
+
+.contact>a, nav>a {
     color: white;
     text-decoration: none;
     display: flex;
+    font-weight: 600;
+}
+
+nav>a:hover {
+    text-decoration: underline;
 }
 
 
 main {
-    margin: 10px 15px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content {
@@ -39,4 +54,11 @@ main {
 
 ul {
     list-style: none;
+}
+
+.projects_grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-row-gap: 15px;
+    margin-top: 20px;
 }
