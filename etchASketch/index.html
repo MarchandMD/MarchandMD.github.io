@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Etch-A-Sketch, Yo!</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1>Let's draw with an Etch-A-Sketch!</h1>
+    </header>
+
+    <div class="reset">
+        <button class="reset_button">Reset</button>
+        <button class="blackAndWhite">B n W</button>
+        <button class="reds">Reds</button>
+        <button class='greens'>Greens</button>
+        <select name="colors" id="color_select">
+            <option value="">Change colors here:</option>
+            <option value="reds">reds</option>
+            <option value="greens">greens</option>
+            <option value="blues">blues</option>
+            <option value="black">black</option>
+            <option value="grayscale">grayscale</option>
+            <option value="pastels">pastels</option>
+        </select>
+    </div>
+
+    <div class="container">
+    </div>
+
+    <div class="empty"></div>
+
+
+    <script src="etchASketch.js"></script>
+</body>
+
+</html>

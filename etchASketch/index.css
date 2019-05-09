@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ASAP', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 32, 79);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    margin: 30px auto;
+    height: 70vh;
+    width: 70vh;
+    opacity: 1;
+    box-shadow: 0 50px 20px gray;
+    display: grid;
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+
+
+.container > div {
+    border: 1px dotted lightgray;
+}
+
+/*
+.container {
+    animation: bounce 1.0s ease-in-out;
+}
+
+
+@keyframes bounce {
+    0% {transform: scale(1.0)}
+    25% {transform: scale(0.9)}
+    75% {transform: scale(1.1)}
+    100% {transform: scale(1.0)}
+}
+
+@keyframes rotateIt {
+    0% {transform: rotate(0)}
+    100% {transform: rotate(90deg)}
+}*/
+
+
+.reset {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(160, 72, 226);
+    color: white;
+    box-shadow: 0 2px 10px gray; 
+}
+
+button {
+    height: 30px;
+    width: 125px;
+    border-radius: 3px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    background-color: rgb(0, 32, 79);
+    color: white;
+}
+
+.reset button:hover {
+    background-color: rgb(145, 132, 179);
+
+    box-shadow: 1px 1px 1px black;
+}
+
