@@ -1,0 +1,59 @@
+* {
+    font-family: Arial;
+}
+
+
+.container {
+    display: grid;
+    grid-template-areas: "title title"
+    "studyTime breakTime"
+    "buttons buttons";
+}
+
+#digits, #breakTimer {
+    font-size: 50px;
+    padding: 10px;
+}
+
+h1 {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-shadow: 3px 3px 1px lightgray;
+    color: gray;
+}
+
+#digits {
+    grid-area: studyTime;
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
+#breakTimer {
+    grid-area: breakTime;
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
+.buttons {
+    grid-area: buttons;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons > button {
+    height: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: rgb(167, 175, 166);
+    font-weight: 900;
+    color: rgb(2, 2, 2);
+}
+
+button:hover {
+    box-shadow: 1px 1px 1px black;
+}
