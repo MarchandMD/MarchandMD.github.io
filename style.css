@@ -115,7 +115,8 @@ section {
 }
 
 body {
-    line-height: 1;
+    min-width: 350px;
+    line-height: 1.3;
 }
 
 ol,
@@ -254,8 +255,14 @@ ul {
         align-items: flex-end;
     }
 
+    main > h2 {
+        font-size: 28px;
+        padding: 10px;
+    }
+
     .text_descriptions {
         display: block;
+        text-overflow: ellipsis;
     }
 
     .projects_grid {
@@ -264,6 +271,8 @@ ul {
         column-gap: 20px;
         row-gap: 15px;
         margin-top: 20px;
+        white-space: nowrap;
+        overflow: hidden;
     }
 
     .projects_grid>li:nth-child(odd) {
