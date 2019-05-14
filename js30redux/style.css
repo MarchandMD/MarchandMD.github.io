@@ -1,0 +1,62 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(image/tom_Cruise_laughing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 500px));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+}
+
+#container>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 467px) {
+
+    #container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}
+
+#one {
+    background: lightseagreen;
+    border: 5px solid hsl(177, 70%, 11%);
+    transition: all .07s ease;
+}
+
+#two {
+    background: lightcoral;
+    border: 5px solid hsl(0, 79%, 32%);
+    transition: all .07s ease;
+}
+
+#three {
+    background: lightgrey;
+    border: 5px solid hsl(0, 0%, 53%);
+    transition: all .07s ease;
+}
+
+#four {
+    border: 5px solid hsl(60, 80%, 60%);
+    background: lightgoldenrodyellow;
+    transition: all .07s ease;
+}
+
+.playing {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px black;
+}
