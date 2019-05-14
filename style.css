@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Source+Sans+Pro');
+/* @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Source+Sans+Pro'); */
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
@@ -192,9 +192,10 @@ nav>a:hover {
 }
 
 main {
-    margin: 10px auto;
     display: flex;
     flex-direction: column;
+    margin: 10px auto;
+    padding: 20px;
     align-items: center;
     background: white;
 }
@@ -211,16 +212,10 @@ ul {
 .projects_grid {
     display: grid;
     grid-template-columns: 1fr;
-}
-
-.projects_grid {
-    border: 1px solid black;
     width: 100%;
 }
 
-.projects_grid > li {
-    
-}
+
 
 .text_descriptions {
     display: none;
@@ -246,6 +241,7 @@ ul {
     justify-items: right;
 }
 
+
 @media (min-width: 450px) {
     header {
         flex-direction: row;
@@ -265,7 +261,12 @@ ul {
     .projects_grid {
         display: grid;
         grid-template-columns: 1fr 3fr;
-        grid-row-gap: 15px;
+        column-gap: 20px;
+        row-gap: 15px;
         margin-top: 20px;
+    }
+
+    .projects_grid>li:nth-child(odd) {
+        justify-self: right;
     }
 }
