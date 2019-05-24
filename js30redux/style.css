@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(image/tom_Cruise_laughing.jpg);
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     background-size: cover;
     background-repeat: no-repeat;
 }
