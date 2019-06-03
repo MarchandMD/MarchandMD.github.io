@@ -8,6 +8,10 @@ body {
     font-size: 16px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     color: black;
     margin: 10px;
