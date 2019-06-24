@@ -2,63 +2,64 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
-    <header>
-        My Calculator
-    </header>
+  <header>
+    Calculator
+  </header>
 
-    <div>
-        
-        <div class="calculator">
+  <div>
 
-            <div class="screen" id="screen">0</div>
+    <div class="calculator">
+      <div class="screen" id="screen"></div>
+      <div class="screen" id="screen1">0</div>
 
-            <div class="button numeric" id="one" data-value="1">1</div>
+      <div class="button number" id="one" data-value="1">1</div>
 
-            <div data-value="2" class="button numeric" id="two">2</div>
+      <div data-value="2" class="button number" id="two">2</div>
 
-            <div data-value="3" class="button numeric" id="three">3</div>
+      <div data-value="3" class="button number" id="three">3</div>
 
-            <div data-value="" class="button operator" id="plus">+</div>
+      <div data-value="plus" class="button operator" id="plus">+</div>
 
-            <div data-value="4" class="button numeric" id="four">4</div>
+      <div data-value="4" class="button number" id="four">4</div>
 
-            <div data-value="5" class="button numeric" id="five">5</div>
+      <div data-value="5" class="button number" id="five">5</div>
 
-            <div data-value="6" class="button numeric" id="six">6</div>
+      <div data-value="6" class="button number" id="six">6</div>
 
-            <div data-value="" class="button operator" id="minus">-</div>
+      <div data-value="minus" class="button operator" id="minus">-</div>
 
-            <div data-value="7" class="button numeric" id="seven">7</div>
+      <div data-value="7" class="button number" id="seven">7</div>
 
-            <div data-value="8" class="button numeric" id="eight">8</div>
+      <div data-value="8" class="button number" id="eight">8</div>
 
-            <div data-value="9" class="button numeric" id="nine">9</div>
+      <div data-value="9" class="button number" id="nine">9</div>
 
-            <div data-value="" class="button operator" id="times">*</div>
+      <div data-value="times" class="button operator" id="times">*</div>
 
-            <div data-value="0" class="button numeric" id="zero">0</div>
+      <div data-value="0" class="button number" id="zero">0</div>
 
-            <div data-value="" class="button operator" id="divide">/</div>
+      <div data-value="divide" class="button operator" id="divide">/</div>
 
-            <div data-value="clear" class="button" id="clear">clear</div>
+      <div data-value="clear" class="button" id="clear">clear</div>
 
-            <div class="button" id="enter">Enter</div>
-        </div>
-
+      <div class="button" id="enter">Enter</div>
     </div>
 
+  </div>
 
 
-    <script src="//marchandmd.github.io/calculator/calc.js"></script>
+
+  <!-- <script src="calc.js"></script> -->
+  <script src="calcFix.js"></script>
 </body>
 
 </html>

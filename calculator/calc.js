@@ -1,4 +1,6 @@
-//!NEXT ISSUE: HITTING OPERATOR BUTTON ON KEYPAD RESULTS IN CALCULATE FUNCTION AND SCREEN OUTPUT
+//I don't know what the problem is. So the first thing I need to do is identify the bugs...
+//I get NaN frequently; How do i fix this? I need to look at the logic. Or maybe start from scratch?//Or take a look at what I have here, and use that as a starting point. 
+//Or maybe do the challenge again.
 
 
 const buttons = document.querySelectorAll('.button');
