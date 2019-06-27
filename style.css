@@ -1,198 +1,199 @@
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 
 
 nav ul {
-    text-align: right;
-    position: fixed;
-    width: 100%;
-    background-color: hsl(203, 61%, 81%);
-    z-index: 5;
+  background-color: white;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 25px 55px 15px 55px;
+  display: inline-block;
+  margin: 25px 55px 15px 55px;
 
 }
 
 nav ul li a {
-    color: hsl(203, 61%, 21%);
-    text-decoration: none;
+
+  color: black;
+  text-decoration: none;
 }
 
 .intro {
-    background: hsl(203, 61%, 81%);
-    min-height: 55vh;
-    padding-top: 45vh;
-    /* line-height: 100vh;
+  background-image: url(images/tenderfootTrail_BoulderCO.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 55vh;
+  padding-top: 45vh;
+  color: white;
+  /* line-height: 100vh;
     width: 100%;
     height: 96vh;
     border: solid; */
 }
 
-.intro p {
-    color: hsl(203, 61%, 21%);
-}
-
 .work {
-    padding-top: 60px;
-    margin-top: -60px;
+  padding-top: 60px;
+  margin-top: -60px;
 }
 
 .work .work-header {
-    margin-top: 50px;
-    color: hsl(203, 61%, 21%);
-    font-weight: normal;
+  margin-top: 50px;
+  color: hsl(203, 61%, 21%);
+  font-weight: normal;
 }
 
 .project {
-    text-decoration: none;
-    color: black;
-    display: inline-block;
-    overflow: hidden;
-    border: 1px solid gray;
-    border-radius: 3px;
-    height: 220px;
-    width: 280px;
-    margin: 40px 100px;
-    background: rgb(212, 212, 212);
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid gray;
+  border-radius: 3px;
+  height: 220px;
+  width: 280px;
+  margin: 40px 100px;
+  background: rgb(212, 212, 212);
 }
 
 .project-pic {
-    width: 100%;
-    height: 220px;
+  width: 100%;
+  height: 220px;
 }
 
 .project-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .show-all {
-    text-decoration: none;
-    display: block;
-    width: 200px;
-    height: 30px;
-    margin: 20px auto 90px;
-    background: lightgray;
-    color: hsl(203, 61%, 21%);
-    font-weight: bold;
-    font-size: 1em;
-    border-radius: 4px;
-    cursor: pointer;
-    padding-top: 10px;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin: 20px auto 90px;
+  background: lightgray;
+  color: hsl(203, 61%, 21%);
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 10px;
 }
 
 .contact {
-    /* height: 800px;
+  /* height: 800px;
     min-height: 800px; */
-    background: #C8F7C5;
-    padding-bottom: 160px;
+  background: #C8F7C5;
+  padding-bottom: 160px;
 }
 
 .header {
-    padding: 160px 0 110px;
+  padding: 160px 0 110px;
 }
 
 .contact-details {
-    display: inline-block;
-    font-weight: bold;
-    margin: 0 35px 45px 35px;
-    list-style: none;
-    border: 2px solid black;
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    background: white;
-    color: black;
-    text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 35px 45px 35px;
+  list-style: none;
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background: white;
+  color: black;
+  text-decoration: none;
 }
 
 .covered-dot {
-    border-radius: 100%;
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    margin: 0 35px 45px 35px;
-    box-sizing: border-box;
+  border-radius: 100%;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 0 35px 45px 35px;
+  box-sizing: border-box;
 }
 
 
 footer {
-    padding: 20px;
-    background: #22313F;
-    color: white;
-    line-height: 40px;
+  padding: 20px;
+  background: #22313F;
+  color: white;
+  line-height: 40px;
 }
 
 
 
 .project-tile {
-    position: relative;
+  position: relative;
 }
 
 .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: rgba(107, 107, 107, 0.9);
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(107, 107, 107, 0.9);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
 }
 
 .project-tile:hover .overlay {
-    bottom: 0;
-    height: 100%;
+  bottom: 0;
+  height: 100%;
 }
 
 .project-title {
-    color: white;
-    font-size: 16px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 
 }
 
 .contact-details:hover {
-    box-shadow: 1px 1px 1px;
+  box-shadow: 1px 1px 1px;
 }
 
 #facebook-dot {
-    margin: 0;
+  margin: 0;
 }
 
 
 @media only screen and (max-width: 500px) {
-    nav ul {
-        text-align: center;
-    }
+  nav ul {
+    text-align: center;
+  }
 
-    nav ul li {
-        margin: 20px;
-    }
+  nav ul li {
+    margin: 20px;
+  }
 
-    .project {
-        margin: 40px 0;
-    }
+  .project {
+    margin: 40px 0;
+  }
 
 
 
