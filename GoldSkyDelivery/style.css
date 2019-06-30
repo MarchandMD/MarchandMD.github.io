@@ -29,7 +29,7 @@ body {
 #first_image_div {
   width: 80vw;
   min-height: 200px;
-  background-image: url(./public/images/BLACKTOWTRUCK.jpg);
+  background-image: url(../public/images/BLACKTOWTRUCK.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
