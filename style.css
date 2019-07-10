@@ -97,8 +97,10 @@ nav ul li a {
 .contact {
   /* height: 800px;
     min-height: 800px; */
-  background: #C8F7C5;
   padding-bottom: 160px;
+  background: url(images/mountainsAndWater.jpg) no-repeat fixed;
+  background-size: cover;
+  color: white;
 }
 
 .header {
