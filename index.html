@@ -1,103 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Portfolio of M. Marchand</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  </head>
 
-<body>
+  <body>
+    <div class="menu_div">
+      <a href="#intro">Home</a>
+      <a href="./resume_website/index.html">Resume</a>
+      <a href="http://dumpandchase.herokuapp.com/" target="_blank">Blog</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
     <nav>
-        <ul id="navbar">
-            <li>
-                <a href="#welcome-section">Home</a>
-            </li>
-            <li>
-                <a href="https://marchandmd.github.io/resume_website/index.html">Resume</a>
-            </li>
-            <li>
-              <a href="https://dumpandchase.herokuapp.com">Blog</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>  
-
+      <i class="fas fa-bars fa-2x"></i>
+    </nav>
+    <i class="fas fa-chevron-up" id="toTopBtn"></i>
     <div id="welcome-section" class="intro">
-        <h1>Hi! I'm Michael...</h1>
-        <p>man of many talents</p>
+      <h1>Personal Portfolio</h1>
+
+      <h3>of Michael Marchand</h3>
     </div>
 
     <div id="projects" class="work">
-        <h2 class="work-header">
-            A handful of my projects...
-        </h2>
-        <a href="https://marchandmd.github.io/tech_directory/index.html" class="project project-tile" target="_blank">
-            <img src="./images/tech_dir_screenshot.png" alt="first project" class="project-pic" />
-            <div class="overlay">
-                <div class="project-title">Technical directory</div>
-            </div>
-        </a>
-        <a href="https://marchandmd.github.io/calculator/index.html" class="project project-tile" target="_blank">
-            <img src="./images/javascript_calculator.png" alt="project picture" class="project-pic" />
-            <div class="overlay">
-                <div class="project-title">Javascript-based calculator</div>
-            </div>
-        </a>
-        <a href="https://marchandmd.github.io/rps/index.html" class="project project-tile" target="_blank">
-            <img src="./images/RockPaperScissorScreenshot.png" alt="project picture" class="project-pic" />
-            <div class="overlay">
-                <div class="project-title">Rock Paper Scissors</div>
-                <p></p>
-            </div>
+      <h2 class="work-header">
+        A handful of my projects...
+      </h2>
+      <a href="https://marchandmd.github.io/tech_directory/index.html" class="project project-tile" target="_blank">
+        <img src="./images/tech_dir_screenshot.png" alt="first project" class="project-pic" />
 
-        </a>
-        <a href="https://marchandmd.github.io/etchASketch/index.html" class="project project-tile" target="_blank"><img src="./images/EtchASketchScreenshot.png" alt="project picture" class="project-pic" />
-            <div class="overlay">
+        <div class="overlay">
 
-                <div class="project-title">Javascript-based Etch-A-Sketch</div>
-            </div>
-        </a>
-        <a href="https://boardwalk-redo.herokuapp.com/" class="project project-tile" target="_blank"><img src="./images/boardwalk_realty_screenshot.png" alt="project picture" class="project-pic" />
-            <div class="overlay">
+          <div class="project-title">Technical directory</div>
+        </div>
+      </a>
+      <a href="https://marchandmd.github.io/calculator/index.html" class="project project-tile" target="_blank">
+        <img src="./images/javascript_calculator.png" alt="project picture" class="project-pic" />
 
-                <div class="project-title">Boardwalk Realty: hosted on Heroku</div>
-            </div>
+        <div class="overlay">
 
-        </a>
-        <a href="https://marchandmd.github.io/DiscoSnake/index.html" class="project project-tile" target="_blank"><img src="./images/snake_game_screenshot.png" alt="project picture" class="project-pic" />
-            <div class="overlay">
+          <div class="project-title">Javascript-based calculator</div>
+        </div>
+      </a>
+      <a href="https://marchandmd.github.io/rps/index.html" class="project project-tile" target="_blank">
+        <img src="./images/RockPaperScissorScreenshot.png" alt="project picture" class="project-pic" />
 
-                <div class="project-title">Canvas/Javascript-based Snake game</div>
-            </div>
+        <div class="overlay">
 
-        </a>
-        <a href="https://github.com/MarchandMD" class="show-all" target="_blank">show all</a>
+          <div class="project-title">Rock Paper Scissors</div>
+
+          <p></p>
+        </div>
+
+      </a>
+      <a href="https://marchandmd.github.io/etchASketch/index.html" class="project project-tile" target="_blank"><img src="./images/EtchASketchScreenshot.png" alt="project picture" class="project-pic" />
+
+        <div class="overlay">
+
+          <div class="project-title">Javascript-based Etch-A-Sketch</div>
+        </div>
+      </a>
+      <a href="https://boardwalk-redo.herokuapp.com/" class="project project-tile" target="_blank"><img src="./images/boardwalk_realty_screenshot.png" alt="project picture" class="project-pic" />
+
+        <div class="overlay">
+
+          <div class="project-title">Boardwalk Realty: hosted on Heroku</div>
+        </div>
+
+      </a>
+      <a href="https://marchandmd.github.io/DiscoSnake/index.html" class="project project-tile" target="_blank"><img src="./images/snake_game_screenshot.png" alt="project picture" class="project-pic" />
+
+        <div class="overlay">
+
+          <div class="project-title">Canvas/Javascript-based Snake game</div>
+        </div>
+
+      </a>
+      <a href="https://github.com/MarchandMD" class="show-all" target="_blank">show all</a>
     </div>
 
     <div id="contact" class="contact">
 
-        <div class="header">
-            <h1>Let's work together...</h1>
-            <p>and build something unique</p>
-        </div>
-        <a href="https://codepen.io/DrinkyTheCrow/#" class="contact-details">Codepen</a>
-        <a href="https://github.com/MarchandMD" class="contact-details">Github</a>
-        <a href="mailto:michaeldavidmarchand@gmail.com" class="contact-details">Email me</a>        
+      <div class="header">
+        <h1>Let's work together...</h1>
+
+        <p>and build something unique</p>
+      </div>
+      <a href="https://codepen.io/DrinkyTheCrow/#" class="contact-details">Codepen</a>
+      <a href="https://github.com/MarchandMD" class="contact-details">Github</a>
+      <a href="mailto:michaeldavidmarchand@gmail.com" class="contact-details">Email me</a>
 
     </div>
     <footer>
-        footer of my Portfolio
-        <p>Hi</p>
+      footer of my Portfolio
+
+      <p>Hi</p>
     </footer>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
-</body>
+   <script src="portfolio.js"></script>
+  </body>
 
 </html>
