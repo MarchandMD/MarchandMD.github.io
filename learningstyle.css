@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 15%;
+  min-height: 100%;
+  font-family: 'Comfortaa', cursive;
+  background-image: url(/images/tenderfootTrail_BoulderCO.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.learning {
+ border: 1px solid black;
+}
