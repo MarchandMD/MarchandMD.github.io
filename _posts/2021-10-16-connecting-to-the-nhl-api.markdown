@@ -1,4 +1,3 @@
-# Connecting to the NHL API
 
 I'm a hobbyist when it comes to working with APIs and Rails and Ruby. Something that I want to learn is how to use (consume) the NHL API. 
 
@@ -52,8 +51,27 @@ Ok, so now I have the other directory for my blog open. What now?
 ## Step 3 - moving this article to a post on my blog
 
 So first thing I need to do is rename this file. the format is: 
-
+```
 year-month-day-title.markdown
+```
+so do that. 
 
-so do that
+Ok, done with that. Now that I've got that covered, on to the next thing....
+
+## Step 4 - the next thing
+So I've gotten this article up to the web; Good for me. 
+
+The next thing I want to do is turn my attention back towards getting more comfortable with my Rails app and using the Celly gem, and interacting with Rails. 
+
+Since I only "know of" routing, and that's the lesson i'm working with, I'll continue to learn about that, and keep in mind the idea of applying whatever I learn to consuming this API. And when I see something in the routing lesson related to what I've already done.....because what have I already done with the Celly gem? 
+
+I've added the Celly gem to my Gemfile, and then I wrote a bunch of stuff on the index page of my little app. 
+
+And what was it that I wrote on the index page? 
+
+I wrote some ERB that is using the objects from the Celly app. 
+
+So then a question is...since I have these objects....what can I do with them? 
+
+I mean, because it's these objects that are the content of the site...right? 
 
