@@ -1,0 +1,54 @@
+So what exactly is a route? 
+
+In the simplest possible terms: it's a path from one place, to another. 
+
+So to understand routes for my web application I need to start by thinking about the most basic and simplest route. 
+
+And the simplest route in all of my files is the route (or path) to my root URL. 
+
+## Root
+
+Something that needs to be assumed for this conversation is the actual location of the entire app. 
+
+Like literally, where is it? 
+
+And when learning about routing and HTTP and the web, it's a little difficult to speak about the "reality" of where the actual application will be. 
+
+So the assumption is that my application will eventually be on a server somewhere and the entire application will be accessible to users of the web. 
+
+It's a little difficult to imagine what every single web address will be for all the different pages of my application; HOWEVER, it's a little easier to think about what the web address will be for the first page, the home page, the landing page, or whatever will be the root of my project. 
+
+So really, to begin understanding routes, the first thing I want to do is I want to imagine someone making a request to visit the very "front" of my application....or the "welcome page" of my application....or the first page of my application. 
+
+Just like all my projects usually have me doing a `mkdir` in the command line, that is a root folder. Or a root directory. 
+
+This shouldn't be news to you at this point. I'd imagine you're very comfortable with the idea of what a root directory is. It's where every other directory (folder) and file "lives" for a specific project. 
+
+No matter what though, there's always a root directory. 
+
+So let's start with that. 
+
+In the `routes.rb` file, let's simply type the word `root`. 
+
+To let Rails know that you're specifying a path for the root of your application, all we need to do is type `root`. 
+
+Next, I have to tell Rails where to send these requests. 
+
+```ruby
+root to: "welcome#index"
+```
+
+So what will happen here is...
+
+1. when someone types the root address of my web application into a browser, the browser will make a request to my application, and then
+2. the request will go to the `routes.rb` file and 
+3. since the line of `root to: "welcome#index"` is there, the application will go to the welcome controller, and 
+4. it will look at the `index` action (aka ruby method) and
+5. the application will perform any ruby code that lives in the `index` action, 
+6. then it will go grab the `welcome/index` view and finally 
+7. it will then send all that back to the browser that made the initial request
+
+
+
+
+
