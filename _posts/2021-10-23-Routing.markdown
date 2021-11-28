@@ -2,6 +2,22 @@ So what exactly is a route?
 
 In the simplest possible terms: it's a path from one place, to another. 
 
+For example, if I think about how to get to the grocery store from my current location, I know which **route** I would take. 
+
+Routing in a web application is similar to this idea. It's also different. 
+
+Instead of going from one physical place to another physical place, i'm going from one website to another website. 
+
+The process of going to the grocery store would require me to put on my shoes, grab my jacket, grocery list and maybe reusable bags. Then I'd jump in my car and follow the route, while obeying traffic laws. 
+
+the process of following a route on a computer is as simple as typing an "address" in the address bar, and hitting enter. 
+
+But what is happening _after_ hitting ENTER? 
+
+Because as a self-taught programmer it's not enough to simply build an entire website or application. The next thing important to know is the writing of the code that allows users who type in the address of my web application to actually get to my web application. 
+
+So if a user types the address to my website, they actually get to my website. 
+
 So to understand routes for my web application I need to start by thinking about the most basic and simplest route. 
 
 And the simplest route in all of my files is the route (or path) to my root URL. 
@@ -12,7 +28,9 @@ Something that needs to be assumed for this conversation is the actual location 
 
 Like literally, where is it? 
 
-And when learning about routing and HTTP and the web, it's a little difficult to speak about the "reality" of where the actual application will be. 
+The answer: a server. 
+
+And when learning about routing and HTTP and the web, it's a little difficult to speak about the "reality" of where the actual application will be. Because while in development, the application is in my local file structure. 
 
 So the assumption is that my application will eventually be on a server somewhere and the entire application will be accessible to users of the web. 
 
@@ -49,6 +67,14 @@ So what will happen here is...
 7. it will then send all that back to the browser that made the initial request
 
 
+Ok, then at this point in the article someting else needs to be said. 
 
+Maybe create the section of the article that are like: 
 
+- Introduction
+- Allegory
+- Assumptions
+- Explanation
+- Example
+- Conclusion
 
