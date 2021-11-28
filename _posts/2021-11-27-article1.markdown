@@ -1,4 +1,10 @@
-Alright, learning to work with Jekyll....it's a templating language, but there's still a learning curve. So just like I was thinking earlier today, the point I want to emphasize here is that I do want to write some more articles, but I want to have a purpose and I want to have a goal. So what should be the thrust of the first article under this new direction? 
+---
+layout: post
+published: false
+title: "It's easy to write a blog article in Jekyll!"
+---
+
+Alright, learning to work with Jekyll....it's a template language, but there's still a learning curve. So just like I was thinking earlier today, the point I want to emphasize here is that I do want to write some more articles, but I want to have a purpose and I want to have a goal. So what should be the thrust of the first article under this new direction? 
 
 - how much of a process do I want to incorporate? 
 - What's the point of the article? 
@@ -50,3 +56,6 @@ Ok, so maybe I have the outline. Now I need to rough draft.
 
 But don't try to type it up. Actually handwrite the article. 
 
+Here's an image: 
+
+![My helpful screenshot](/assets/images/2899.jpeg)
