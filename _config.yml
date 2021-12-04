@@ -38,6 +38,10 @@ show_excerpts:
 paginate: 5
 paginate_path: "/page:num/"
 
+# minima:
+#   skin: dark
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
