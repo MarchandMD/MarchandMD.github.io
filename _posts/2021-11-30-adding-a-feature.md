@@ -7,14 +7,14 @@ title: Default Minima theme Vs Minimal-Mistakes theme
 # tags: YAML list or space-separated string
 ---
 
-## introduction
+### introduction
 Change is an inevitable part of life. Being able to gracefully transition when change is necessary can be an indication of a flexible and open mind. There is an idiom, however, that opposes these ideas: "Better the devil you know." Using the existing default Minima theme is better than changing to the new theme titled Minimal-Mistakes.
 
 I will compare and contrast the Minima and Minimal-Mistakes themes by looking at the steps needed to configure them, the strength of the documentation for each, and the features available to both. The comparison will start with a fully-developed and working site already using the Minima theme. While it is tempting to look for a new option that may seem to be a quick fix with a slick looking user interface, making a change isn't necessarily the best thing to do when learning. To begin understanding these convictions against change, I'll discuss the steps needed to apply a theme. 
 
-## body of article
+### body of article
 
-### section 1  
+#### section 1  
 
 The existing Minima theme has been in place since the project was created. The Minima theme comes "pre-packaged" as the default of a new project. It's intended to be used as a starting point for learning Jekyll. To apply the Minima theme requires no editing of the existing files. Also, adding to the blog's content does not require any changes to files. Furthermore, the `Gemfile` and `_config.yml` are already properly setup and do not require any editing.  
 
@@ -22,7 +22,7 @@ Selecting the Minimal-Mistakes theme is not the default, and therefore requires 
 
 While it may seem to be relatively easy to change to a new theme, getting away from the default may introduce hidden challenges. One way to avoid or resolve challenges is through documentation. 
 
-### section 2
+#### section 2
 
 Documentation can resolve challenges to using a theme effectively. I will next observe both theme's ReadMe files, compare the # of contributors to the entire themes, and also the interface for accessing each theme's documentation. 
 
@@ -34,7 +34,7 @@ The maturity of a theme's documentation can be further articulated by interactin
 
 Having now compared and contrasted both theme's documentation with each other, i'm going to look closer at the specific features of each theme; Specifically, target purpose of the theme, layouts, customization of navigation and aesthetics of the interface. 
 
-### section 3
+#### section 3
 
 Looking through the documentation of each theme gives a sense of what both themes are all about. Taking a closer look at specific features about each theme helps embellish the comparison and contrast of the two themes.  
 
@@ -48,7 +48,7 @@ Minimal-Mistakes has a separate "nav links" in it's `_includes`, but it's not ne
 
 In terms of aesthetics, both have a "clean" feel to them. They aren't overly cluttered, and they are responsive and built to be respectful of multiple browsers and devices. 
 
-## conclusion  
+### conclusion  
 
 Both the default Minima theme and the popular Minimal-Mistakes themes have been compared. Using the criteria above it's interesting to find that the two theme's may not be so different from each other. And the Minimal-Mistakes theme may actually be more robust in terms of it's appeal and it's customization. 
 
