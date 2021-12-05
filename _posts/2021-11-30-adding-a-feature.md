@@ -8,7 +8,6 @@ title: Default Minima theme Vs Minimal-Mistakes theme
 ---
 
 ## introduction
-
 Change is an inevitable part of life. Being able to gracefully transition when change is necessary can be an indication of a flexible and open mind. There is an idiom, however, that opposes these ideas: "Better the devil you know." Using the existing default Minima theme is better than changing to the new theme titled Minimal-Mistakes.
 
 I will compare and contrast the Minima and Minimal-Mistakes themes by looking at the steps needed to configure them, the strength of the documentation for each, and the features available to both. The comparison will start with a fully-developed and working site already using the Minima theme. While it is tempting to look for a new option that may seem to be a quick fix with a slick looking user interface, making a change isn't necessarily the best thing to do when learning. To begin understanding these convictions against change, I'll discuss the steps needed to apply a theme. 
