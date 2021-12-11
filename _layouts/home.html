@@ -2,12 +2,11 @@
 layout: default
 author: Michael Marchand
 ---
-
 <div class="home">
   {%- if page.title -%}
   <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
-  
+
 
   {{ content }}
 
@@ -24,7 +23,7 @@ author: Michael Marchand
           {{ post.title | escape }}
         </a>
       </h3>
-      
+
       {%- if site.show_excerpts -%}
       {{ post.excerpt }}
       {%- endif -%}
