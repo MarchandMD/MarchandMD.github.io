@@ -9,7 +9,7 @@ I'm learning Rails. Specifically, i'm doing [this lesson in TheOdinProject.](htt
 
 I use `localhost`. A lot. After I "spin up the Rails server", I can see my website/web app live. 
 
-I type `localhost:1234` (or whatever number port I happen to be using) and then hit enter, and _VIOLA!_ my website appears in the brower. 
+I type `localhost:1234` (or whatever number port I happen to be using) and then hit enter, and _VIOLA!_ my website appears in the browser. 
 
 What happens _after_ I hit enter (or return)? 
 
@@ -31,8 +31,33 @@ The rest of this article will discuss just exactly how an HTTP request goes from
 
 ### body of article
 
-#### section 1  
-The discussion begins with an HTTP request being sent to the application. An HTTP request comes from the address bar in a browser, or from clicking a link in the app, or webpage. Every time an HTTP request happens there are generally 2 things that are sent to my app: A verb, and an address. For the sake of this article the verb will always be `GET` and the address will look like `/patients/17`. Obviously this is only part of what would be typed in an address bar. The rest of the address would look something like: `https://www.mycoolapp.com/` so the entire thing would be: `https://www.mycoolapp.com/patients/17`. We're only concerned with the last two portions. So this is the beginning of the flow along a Rails routing path. There's a proper HTTP request which arrives with an HTTP verb `GET` and an address in the form of `/patients/17`. Now that we have the first part of the Rails routing signal-flow, the next step is to observe how a Rails app will handle that request. 
+#### section 1  - What exactly is in an HTTP request, anyway?
+So, hitting enter (or return) tells the browser to create and then send an HTTP request. 
+
+For the sake of ease I'm going to sometimes refer to an HTTP request as 'a request' for the rest of this article. Sometimes I'll say 'HTTP request' and other times I'll just say 'request'. Deal with it.
+
+Yeah, you probably though the browser was just something sort of dumb that just did what you told it to do. 
+
+I'm here to tell you your browser is actually very capable of doing many things. Two of those things are 1. creating HTTP requests and 2. sending HTTP requests. 
+
+Every time the browser builds a request, it _wants_ 2 specific things: An HTTP verb and a web address.
+
+Ugh, this is starting to get complicated....
+
+So let's take a step back then. We're talking about HTTP requests and what they are. 
+
+  - They're things created (and sent) by the browser
+  - They have a verb and an address  
+
+Ok, maybe it's not that complicated then....
+
+The verb is `GET`. Not always. Not all the time. There are other verbs. If you must know what the other verbs are, just search "HTTP verbs". Here, i'll do it [for ya, lmao](https://www.google.com/search?hl=en&q=what%20are%20HTTP%20verbs) 
+
+Just squash that other curiosity for a second and keep the eyes on the prize.
+
+The HTTP verb is `GET`. Where does the address come from? 
+
+Yep: the address bar. 
 
 #### section 2
 Now that a valid HTTP request has arrived, Rails will "look" at the pattern of the address as well as the HTTP verb of `GET`. Essentially, the application will go into the `/config/routes.rb` file and look for some hard code that has been typed by the developer. In this example, in the `/config/routes.rb` file the Rails app will find this line of code: 
