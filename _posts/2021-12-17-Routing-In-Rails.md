@@ -1,22 +1,33 @@
 ---
 layout: post
 published: true # switch to true when I'm ready to publish this
-# title: Default Minima theme Vs Minimal-Mistakes theme
-# date:   2021-08-24 16:54:42 -0600 # optional; can override filename date to re-order articles; but it must contain all those different parts; -0600 is MST
-# categories: # optional; I don't have any that I'm using right now
-# tags: YAML list or space-separated string
+title: "Watch an HTTP request move from a Browser through a Rails app"
 ---
 
 ### introduction
-This article is a very high-level overview about routing in Rails. It is intended to supplement [this lesson in TheOdinProject](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/routing)  
+I'm learning Rails. Specifically, i'm doing [this lesson in TheOdinProject.](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/routing)  
 
-When I'm working on a Rails app, I view the app in my browser by typing into the address bar and hitting enter. This article discusses what happens _after_ hitting enter. The same principles apply if I click a hypertext link or type another valid address for my web app.  
+I use `localhost`. A lot. After I "spin up the Rails server", I can see my website/web app live. 
 
-It is possible to imagine how an entire app is connected to a browser via the signal and flow of an HTTP request routing it's way through Rails code and/or the project directory.  
+I type `localhost:1234` (or whatever number port I happen to be using) and then hit enter, and _VIOLA!_ my website appears in the brower. 
 
-In this article I'll discuss the signal that begins the flow of an HTTP request, the assumptions that must be made to describe what happens in the middle of the request, and finally how a view is returned to a browser as part of a successful flow of a signal through the app.  
+What happens _after_ I hit enter (or return)? 
 
-Now that I have a road map of what the purpose of this article is and what it will cover, I'll begin by taking a closer look at how to signal the start of this process: with an HTTP request. 
+Imagine typing an address in the address bar is the same thing as thinking of something you want. 
+
+Hitting enter (or return) would be like telling someone to go get that thing and bring back to you, and place it in front of you. 
+
+Of course this is a very general idea....and it is an analogy for making an HTTP request. The thing you typed in the address bar of the browser? That's the request. 
+
+Hitting enter (or return)? Well what's that? That, my friends, is part of the magic of the internet which isn't really magic at all. 
+
+Hitting enter (or return) is known as "making an HTTP request". 
+
+So is clicking a link, so is filling out a form on a webpage, so is visiting a website from your search history. Lots of HTTP requests are being made right now.
+
+And if you're reading this, you're _not_ making an HTTP request; you already did. What you're doing now is viewing the successful results of an HTTP request. 
+
+The rest of this article will discuss just exactly how an HTTP request goes from wherever it starts (clicking a link, typing a web address in the address bar, etc) all the way through a Rails application. 
 
 ### body of article
 
