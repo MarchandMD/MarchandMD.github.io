@@ -71,7 +71,7 @@ Well yeah. However, we're going to follow that HTTP request. We're going to pret
 
 So let's now pretend we've arrived at the address. And the address just happens to be the Rails application I'm building! Let's keep watching the request....
 
-#### section 2
+#### section 2 - making a small change
 Now that a valid HTTP request has arrived, Rails will "look" at the pattern of the address as well as the HTTP verb of `GET`. Essentially, the application will go into the `/config/routes.rb` file and look for some hard code that has been typed by the developer. In this example, in the `/config/routes.rb` file the Rails app will find this line of code: 
 
 ```ruby
