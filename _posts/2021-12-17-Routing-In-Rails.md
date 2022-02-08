@@ -15,24 +15,22 @@ What happens _after_ I hit enter (or return)?
 
 Imagine typing an address in the address bar is the same thing as thinking of something you want. 
 
-Hitting enter (or return) would be like telling someone to go get that thing and bring back to you, and place it in front of you. 
+Hitting enter (or return) would be like telling someone to go get that thing and it back to you, and place it in front of you. 
 
 Of course this is a very general idea....and it is an analogy for making an HTTP request. The thing you typed in the address bar of the browser? That's the request. 
 
 Hitting enter (or return)? Well what's that? That, my friends, is part of the magic of the internet which isn't really magic at all. 
 
-Hitting enter (or return) is known as "making an HTTP request". 
+Hitting enter (or return) is known as "making an HTTP request". So is clicking a link, so is filling out a form on a webpage, so is visiting a website from your search history. 
 
-So is clicking a link, so is filling out a form on a webpage, so is visiting a website from your search history. Lots of HTTP requests are being made right now.
+Lots of HTTP requests are being made right now.
 
 And if you're reading this, you're _not_ making an HTTP request; you already did. What you're doing now is viewing the successful results of an HTTP request. 
 
 The rest of this article will discuss just exactly how an HTTP request goes from wherever it starts (clicking a link, typing a web address in the address bar, etc) all the way through a Rails application. 
 
-### body of article
-
-#### section 1  - What exactly is in an HTTP request, anyway?
-So, hitting enter (or return) tells the browser to create and then send an HTTP request. 
+### section 1  - What exactly is in an HTTP request, anyway?
+Hitting enter (or return) tells the browser to create and then send an HTTP request. 
 
 For the sake of ease I'm going to sometimes refer to an HTTP request as 'a request' for the rest of this article. Sometimes I'll say 'HTTP request' and other times I'll just say 'request'. Deal with it.
 
@@ -58,6 +56,20 @@ Just squash that other curiosity for a second and keep the eyes on the prize.
 The HTTP verb is `GET`. Where does the address come from? 
 
 Yep: the address bar. 
+
+The website you typed is the address. That's the location. 
+
+So the verb is `GET` and the address is in the address bar. 
+
+So now the browser has ([most of](https://gavilan.blog/2019/01/03/anatomy-of-an-http-request/)) what it needs to make an HTTP request. 
+
+Hitting enter tells the browser to `GET` the "address". 
+
+Simple enough, right? 
+
+Well yeah. However, we're going to follow that HTTP request. We're going to pretend it's moving super slow and that we as humans can watch it move from the browser then over the magic of WIFI or an ethernet cable to the internet, and through all kinds of "traffic" to a server where the "address" is. 
+
+So let's now pretend we've arrived at the address. And the address just happens to be the Rails application I'm building! Let's keep watching the request....
 
 #### section 2
 Now that a valid HTTP request has arrived, Rails will "look" at the pattern of the address as well as the HTTP verb of `GET`. Essentially, the application will go into the `/config/routes.rb` file and look for some hard code that has been typed by the developer. In this example, in the `/config/routes.rb` file the Rails app will find this line of code: 
