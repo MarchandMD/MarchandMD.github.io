@@ -11,13 +11,17 @@ I use `localhost`. A lot. After I "spin up the Rails server", I can see my websi
 
 I type `localhost:1234` (or whatever number port I happen to be using) and then hit enter, and _VIOLA!_ my website appears in the browser. 
 
-What happens _after_ I hit enter (or return)? 
+So what happens _after_ I hit enter (or return) to make my website appear in the browser?
 
-Imagine typing an address in the address bar is the same thing as thinking of something you want. 
+The rest of this article will try to illustrate the answer to that question. 
 
-Hitting enter (or return) would be like telling someone to go get that thing and it back to you, and place it in front of you. 
+Now, imagine typing an address in the address bar is the same thing as thinking of something you want to see. 
 
-Of course this is a very general idea....and it is an analogy for making an HTTP request. The thing you typed in the address bar of the browser? That's the request. 
+Hitting enter (or return) would be like telling someone to go get that thing and bring it back to you, and place it in front of you. 
+
+Of course this is a very simplistic and general idea....
+
+and it is an analogy for making an HTTP request. The thing you typed in the address bar of the browser? That's the request. 
 
 Hitting enter (or return)? Well what's that? That, my friends, is part of the magic of the internet which isn't really magic at all. 
 
