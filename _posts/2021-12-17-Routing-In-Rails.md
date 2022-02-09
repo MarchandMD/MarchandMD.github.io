@@ -75,7 +75,7 @@ Well yeah. However, we're going to follow that HTTP request. We're going to pret
 
 So let's now pretend we've arrived at the address. And the address just happens to be the Rails application I'm building! Let's keep watching the request....
 
-#### section 2 - making a small change
+#### section 2 - making a small change, even smaller
 
 Now  a valid request has arrived at the "front door" of my Rails app. 
 
