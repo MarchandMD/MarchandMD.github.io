@@ -1,8 +1,6 @@
 ---
 layout: post
-published: true # switch to true when I'm ready to publish this
-# categories: # optional; I don't have any that I'm using right now
-# tags: YAML list or space-separated string
+published: true
 ---
 
 I need an English-to-English translation of the official Rails guide. The language and ideas there are too obscure, too convoluted, too "gate-keepy". So i'll try to extrapolate those words into simpler ideas I understand. 
