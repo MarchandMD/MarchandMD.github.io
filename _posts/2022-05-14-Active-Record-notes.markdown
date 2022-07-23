@@ -13,7 +13,7 @@ Active Record seems to be a really big deal in Rails. It's only fair that more t
 
 Active Record is the "M" in MVC; the Model. 
 
-Every application is about a "thing". At least, an application is about one thing. Realistically an app is about many things, but I can't start discussing Active Record from the perspective looking at a complex situation. 
+Every application is about a "thing". An application is about one thing, at least. Realistically an app is about many things; When learning though, keep it simple....
 
 So then an application is about a single thing. Let's say an application is about a blog. 
 

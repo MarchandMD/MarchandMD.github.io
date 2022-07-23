@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 ---
 
 I need an English-to-English translation of the official Rails guide. The language and ideas there are too obscure, too convoluted, too "gate-keepy". So i'll try to extrapolate those words into simpler ideas I understand. 
