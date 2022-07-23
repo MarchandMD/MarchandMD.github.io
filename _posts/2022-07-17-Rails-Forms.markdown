@@ -27,7 +27,13 @@ which will result in this HTML when rendered:
 
 ![HTML rendered code](/assets/images/code_photos/form_action_users.png)
 
-* The input must be explicitly labeled into a hash to be nested within the params hash upon submission. 
+* The input must be explicitly labeled into a hash to be nested within the params hash upon submission:
+
+![label with hash](/assets/images/code_photos/explicitly_label_user_hash.png)
+
+and this will push the input to a nested hash within params:
+
+![params hash](/assets/images/code_photos/params_hash.png)
 
 
 * The methods exposed with the `form_tag` are specific to be used with that method. 
