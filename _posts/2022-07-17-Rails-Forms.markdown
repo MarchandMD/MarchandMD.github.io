@@ -21,7 +21,7 @@ This article will explore `form_tag` and `form_with`.
 
 * When using the form_tag, the action must be specified explicitly:
 
-![action specified explicitly](/assets/images/screen_shot1.png)
+![action specified explicitly](/assets/images/code_photos/screen_shot1.png)
 
 
 
