@@ -35,8 +35,9 @@ and this will push the input to a nested hash within params:
 
 ![params hash](/assets/images/code_photos/params_hash.png)
 
+* The methods exposed with the `form_tag` are specific to be used with that method:
 
-* The methods exposed with the `form_tag` are specific to be used with that method. 
+![form_tag methods](/assets/images/code_photos/form_tag_methods.png)
 
 ## paragraph 2 - `form_with`
 
