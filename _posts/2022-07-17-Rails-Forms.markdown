@@ -43,9 +43,19 @@ and this will push the input to a nested hash within params:
 
 * The action can be specified explicitly, though it's passed via the `url:` argument and can accept the rails path helpers
 
+![form_with action](/assets/images/code_photos/form_with_action.png)
+
+And it creates this HTML (same as the form_tag)
+
+![HTML rendered code](/assets/images/code_photos/form_action_users.png)
+
 * Instead of explicitly coding the names of the input fields, adding the `scope:` argument will automatically provide the same result
 
+![form_with scope](/assets/images/code_photos/form_with_scope.png)
+
 * Can use a model (or an instance of one) to apply both a URL, action and the `scope:` for the input fields
+
+![form_with action](/assets/images/code_photos/form_with_action.png)
 
 * Using an existing model object will pre-populate the fields
 
@@ -60,6 +70,9 @@ It's being discontinued. If the above 2 methods are understood, then `form_for` 
 
 ## conclusion
 
-## footnotes
+Both `form_tag` and `form_with` make writing forms easier. 
+
+And `form_for` should be known about, but not used since it's being deprecated and removed. 
+
 
 
