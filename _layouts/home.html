@@ -12,7 +12,7 @@ author: Michael Marchand
 
   {%- if site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-  <hr>
+  
   <ul class="post-list">
     {%- for post in paginator.posts -%}
     <li>
@@ -25,10 +25,10 @@ author: Michael Marchand
       </h3>
 
       {%- if site.show_excerpts -%}
-      {{ post.excerpt }}
+      {{ post.content | strip_html | truncatewords: 50 }}
       {%- endif -%}
     </li>
-    <hr>
+    
     {%- endfor -%}
   </ul>
   {% if paginator.previous_page %}
