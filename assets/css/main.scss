@@ -4,4 +4,7 @@
 
 @import "{{ site.theme }}";
 
-
+.site-header{
+  background: no-repeat url("/../images/sparks.jpeg");
+  min-height: 200px;
+}
