@@ -25,7 +25,7 @@ Yes, the extension of a rake file is `.rake`. It's not a big deal. That's just w
 
 ## Populating the .rake file with code
 
-I'll be following along with some of these basics for this next part: https://guides.rubyonrails.org/v5.2/command_line.html#custom-rake-tasks
+I'll be following along with some of these basics for this next part: [https://guides.rubyonrails.org/v5.2/command_line.html#custom-rake-tasks](https://guides.rubyonrails.org/v5.2/command_line.html#custom-rake-tasks)
 
 Open the `.rake` file you just created in your favorite IDE (if you're not already there).
 
