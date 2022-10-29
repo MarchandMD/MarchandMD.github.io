@@ -1,10 +1,11 @@
 ---
 ---
-
-
 @import "{{ site.theme }}";
 
 .site-header{
-  background: no-repeat url("/assets/images/sparks.jpeg");
+  background: url("/assets/images/sparks.jpeg");
   min-height: 200px;
+  margin-left: 20%;
+  margin-right: 20%;
+  top: 0;
 }
