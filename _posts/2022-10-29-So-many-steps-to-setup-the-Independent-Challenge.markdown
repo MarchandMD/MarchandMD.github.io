@@ -28,7 +28,15 @@ Here's a list that will hopefully help go from `git clone` to User story 1...
 10. Repeat 8 and 9 as necessary
 11. Review `/db/schema.rb` for correctness
 12. Add `SimpleCov` gem (don't forget to `bundle` or `bundle install`... they're the same thing)
-13. And SimpleCov code to the `/spec/spec_helper.rb`
+13. And SimpleCov code to the top of `/spec/spec_helper.rb`
+
+```ruby
+require 'simplecov'
+SimpleCov.start do
+  add_filter "spec/rails_helper.rb"
+end
+```
+
 14. Run `bundle exec rspec spec/models/` or whatever and make sure 100% coverage
 15. Add additional tests for model relationships
 16. Start the user stories
