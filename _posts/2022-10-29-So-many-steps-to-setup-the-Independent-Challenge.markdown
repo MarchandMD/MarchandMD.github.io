@@ -23,7 +23,11 @@ Here's a list that will hopefully help go from `git clone` to User story 1...
 5. Plan updates to the schema, visually (like, write them with pencil and paper)
 6. Create additional models, with their relationships (has_many, belongs_to, has_many through:)
 7. create db `rails db:create`
-8. write migration `rails g migration <NameOfMigration> <column_name:data_type> etc`
+8. write migration `rails g migration <NameOfMigration> <column_name:data_type> etc
+
+```ruby
+rails g migration CreateDiscounts percentage:integer quantity_threshold:integer metchant:references
+```
 9. migrate
 10. Repeat 8 and 9 as necessary
 11. Review `/db/schema.rb` for correctness
