@@ -16,23 +16,25 @@ Here's a list that will hopefully help go from `git clone` to User story 1...
 
 ## The List of Steps:
 
-1. `git clone` to wherever you keep things
-2. `bundle` or `bundle install`
+1. `git clone` to wherever you keep things on your local machine
+2. `bundle` or `bundle install` (they do the same thing)
 3. Read the README.md
 4. Review the existing `/db/schema.rb`
-5. Plan updates to the schema, visually (like, write them with pencil and paper)
+5. In `/db/schema.rb`, select all, and copy the data
+6. Go to [www.dbdiagram.io](https://dbdiagram.io/home) and import your schema there, to get a visual representation
+5. Plan updates to the schema, visually (like, write them with pencil and paper, or update via the website)
 6. Create additional models, with their relationships (has_many, belongs_to, has_many through:)
-7. create db `rails db:create`
-8. write migration `rails g migration <NameOfMigration> <column_name:data_type> etc
+7. create the db `rails db:create`
+8. write migration `rails g migration <NameOfMigration> <column_name:data_type>' etc (see below for an example)
 
 ```ruby
-rails g migration CreateDiscounts percentage:integer quantity_threshold:integer metchant:references
+rails g migration CreateDiscounts percentage:integer threshold:integer merchant:references
 ```
-9. migrate
+9. migrate the migration (`rails db:migrate`)
 10. Repeat 8 and 9 as necessary
 11. Review `/db/schema.rb` for correctness
-12. Add `SimpleCov` gem (don't forget to `bundle` or `bundle install`... they're the same thing)
-13. And SimpleCov code to the top of `/spec/spec_helper.rb`
+12. **(optional) Add `SimpleCov` gem (don't forget to `bundle` or `bundle install`...they do the same thing); for most ICs this is already in the Gemfile
+13. **(optional) And SimpleCov code to the top of `/spec/spec_helper.rb`
 
 ```ruby
 require 'simplecov'
@@ -43,6 +45,9 @@ end
 
 14. Run `bundle exec rspec spec/models/` or whatever and make sure 100% coverage
 15. Add additional tests for model relationships
+16. ```ruby
+      it { should have_many :items }
+    ```
 16. Start the user stories
 
 ## conclusion
