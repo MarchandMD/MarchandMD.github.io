@@ -4,3 +4,5 @@ _site
 .jekyll-metadata
 vendor
 *.DS_Store
+/_rough_drafts
+/assets/images/.DS_Store

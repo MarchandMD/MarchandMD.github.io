@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -21,7 +21,7 @@
 title: Michael Marchand
 email: michaeldavidmarchand@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Learning. One Day at a time. 
+  Learning. One Day at a time.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://MarchandMD.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -34,13 +34,17 @@ plugins:
   - jekyll-paginate
 show_excerpts:
   - true
-  
+
 paginate: 5
 paginate_path: "/page:num/"
 
 # minima:
 #   skin: dark
 
+sass:
+  load_paths:
+    - _sass
+    - /Users/michaelmarchand/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0
 
 # Exclude from processing.
 # The following items will not be processed, by default.
