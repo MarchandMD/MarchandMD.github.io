@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true # switch to true when I'm ready to publish this
-# title:  "Great googly Moogly" # whatever you'd like it to be; if omitted will default to file name title
+title:  "How to install and configure factory_bot_rails" # whatever you'd like it to be; if omitted will default to file name title
 # date:   2021-08-24 16:54:42 -0600 # optional; can override filename date to re-order articles; but it must contain all those different parts; -0600 is MST
 # categories: # optional; I don't have any that I'm using right now
 # tags: YAML list or space-separated string
@@ -142,7 +142,7 @@ This'll make 10 books.
 
 Now, keep in mind, this is happening in the "test" environment. That means when these factory things are created, they're being populated into the "test database". That's different than the development database.
 
-But if you wanted to use these technologies to "seed" your development database, I suppose that could be done too, in the seeds.rb file. 
+But if you wanted to use these technologies to "seed" your development database, I suppose that could be done too, in the seeds.rb file.
 
 There's probably a lot more flexibility to be used with FactoryBot. This is just one version of FactoryBot (specifically, `factory_bot_rails`).
 
