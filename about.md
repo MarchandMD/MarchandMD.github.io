@@ -9,4 +9,4 @@ More about me here...
 
 [My Github page](https://www.github.com/marchandmd)
 
-Link to résumé (work in progress)
+[pdf copy of my résumé](/Michael_Marchand_technical_resume.pdf)
