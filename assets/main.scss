@@ -4,9 +4,11 @@
 
 .site-header{
   background: url("/assets/images/sparks.jpeg");
-  min-height: 200px;
-  margin-left: 20%;
-  margin-right: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  background-size: cover;
+  min-height: 300px;
   top: 0;
 }
 
