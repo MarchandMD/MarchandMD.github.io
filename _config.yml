@@ -43,6 +43,12 @@ paginate_path: "/page:num/"
 linkedin_username: mmarchand1
 github_username: marchandmd
 
+header_pages:
+  - portfolio.md
+  - Code_Challenges.md
+  - about.md
+  - index.html
+
 sass:
   load_paths:
     - _sass

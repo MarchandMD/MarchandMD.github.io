@@ -5,6 +5,8 @@ permalink: /about/
 ---
 
 
-More about me here...  
+More about me here...
 
 [My Github page](https://www.github.com/marchandmd)
+
+Link to résumé (work in progress)
