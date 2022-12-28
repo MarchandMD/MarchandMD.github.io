@@ -40,6 +40,7 @@ paginate_path: "/page:num/"
 
 # minima:
 #   skin: dark
+linkedin_username: mmarchand1
 
 sass:
   load_paths:
