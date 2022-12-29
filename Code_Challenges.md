@@ -1,19 +1,6 @@
 ---
 layout: page
 title: Code Challenges
-permalink: /code_challenges/
 ---
-A collection of challenges solved from various code challenge websites
 
-### Edabit
-[link to Edabit profile](https://edabit.com/user/4tm7wLghfrCcZTiAC)
-
-### LeetCode
-
-### Project Euler
-
-### Coderbyte
-
-### Hackerrank
-
-### Codewars
+This is getting to be a lot more awesome now that I know who to build around it; and it didn't really take me that long; but it did take a lot of beating my head against the wall; no worries; I got it now; or am getting it now. Which should help to expand what I'm doing.   
