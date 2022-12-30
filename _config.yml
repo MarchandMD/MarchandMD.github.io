@@ -36,11 +36,19 @@ plugins:
 collections:
   code_challenges:
     output: true
+  projects:
+    output: true
 
 include:
   - _code_challenges
+  - _edabit
+  - leetcode
+  - _projects
 
 show_excerpts:
+  - true
+
+page_excerpts:
   - true
 
 paginate: 5
@@ -61,10 +69,6 @@ sass:
   load_paths:
     - _sass
     - /Users/michaelmarchand/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0
-
-
-
-
 
 
 

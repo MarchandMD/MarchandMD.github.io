@@ -1,6 +1,6 @@
 ---
 layout: page
-title: test file
+title: Edabit challenge 2
 ---
 
 this is a test file in `/_code_challenges` directory
