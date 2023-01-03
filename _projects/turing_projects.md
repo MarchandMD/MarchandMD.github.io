@@ -7,7 +7,7 @@ The mission of Turing School of Software & Design is _"to unlock human potential
 
 # Projects completed while attending Turing School of Software & Design:
 - [Rails Engine](#rails-engine) - Expose an API; Consume the same API
-- Viewing Party
+- [Viewing Party](#viewing-party) - Consume an API; Authorize/Authenticate a User
 - Little Esty Shop
 - Adopt Don't Shop
 - Relational Rails
@@ -30,3 +30,13 @@ Additional screenshots:
 
 
 ---
+# Viewing Party
+Consume an API; Authorize/Authenticate a User
+
+link to [Github repo](https://github.com/MarchandMD/viewing_party_lite)
+
+![image1](/assets/images/portfolio_screenshots/viewing_party/viewing_party_home_screen.png)
+
+Additional screenshots:
+- [Consume an API 1](/assets/images/portfolio_screenshots/viewing_party/viewing_party_api_consumption_1.png)
+- [Consume an API 2](/assets/images/portfolio_screenshots/viewing_party/viewing_party_api_consumption_2.png)
