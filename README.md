@@ -17,3 +17,9 @@
 - SASS
 - GH Pages
 - Version Control
+
+# future goals
+- Code challenge aggregation
+- API consumption for GH statistics
+- Additional themes
+- collapsible navigation
