@@ -2,6 +2,7 @@
 
 ## Live online at: [MarchandMD.github.io](https://marchandmd.github.io/)
 
+![image](/assets/images/portfolio_screenshots/website/homepage.png)
 
 # Personal/Professional website repo for Michael Marchand
 - Simple blog built with Jekyll
@@ -23,3 +24,4 @@
 - API consumption for GH statistics
 - Additional themes
 - collapsible navigation
+
