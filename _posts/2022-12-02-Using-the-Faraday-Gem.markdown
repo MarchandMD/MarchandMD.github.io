@@ -46,10 +46,10 @@ Add this code:
 # app/services/tmdb_services.rb
 
 def conn
-Faraday.new(url: "https://api.themoviedb.org") do |faraday|
-  faraday.params['api_key'] = ENV['tmdb_api_key']
-  faraday.params['language'] = 'en-US'
-end
+  Faraday.new(url: "https://api.themoviedb.org") do |faraday|
+    faraday.params['api_key'] = ENV['tmdb_api_key']
+    faraday.params['language'] = 'en-US'
+  end
 end
 ```
 
