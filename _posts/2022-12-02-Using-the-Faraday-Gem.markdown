@@ -35,7 +35,7 @@ In the `services` directory, create a blank `.rb` file, and name it something ob
 Again, the file path looks like this, starting at the root (aka home) directory of your app:
 
 ```
-my_cool_rails_app/app/services/tmdb_services.rb`
+my_cool_rails_app/app/services/tmdb_services.rb
 ```
 
 The file is plural, because there will be multiple endpoints accessed...and then _SERVED_ to you (like a plate of food is served to you).
@@ -46,10 +46,10 @@ Add this code:
 # app/services/tmdb_services.rb
 
 def conn
-  Faraday.new(url: "https://api.themoviedb.org") do |faraday|
-    faraday.params['api_key'] = ENV['tmdb_api_key']
-    faraday.params['language'] = 'en-US'
-  end
+Faraday.new(url: "https://api.themoviedb.org") do |faraday|
+  faraday.params['api_key'] = ENV['tmdb_api_key']
+  faraday.params['language'] = 'en-US'
+end
 end
 ```
 
@@ -85,8 +85,7 @@ in the same file, write this method:
 
 ```ruby
 def top_rated
-    get_url("/3/movie/top_rated")
-  end
+  get_url("/3/movie/top_rated")
 end
 ```
 
