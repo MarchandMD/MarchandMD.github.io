@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title:  "Cookies, and Sessions"
 categories: cookies sessions rails controllers
 ---
