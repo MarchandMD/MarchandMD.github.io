@@ -3,15 +3,12 @@
 @import "{{ site.theme }}";
 
 .site-header{
-  background: url("/assets/images/sparks.jpeg");
+  background: url("/assets/images/mountains.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-position-y: top;
+  background-position-y: center;
   background-size: cover;
   min-height: 300px;
   top: 0;
 }
 
-.sidebar {
-
-}
