@@ -13,13 +13,13 @@ published: true
 
 # steps to complete
 
-1. Setup the database in postgresQL via the commandline using plain ol' SQL
+1. [Setup](#setup)
     - create a database in Postgres
     - create a table in the database
     - add 2 users with name and email as dummy data
-2. run `npm init -y` to create a package.lock file
-3. install a couple of packages: Express and Node-postgres via the command line `npm i express pg` (this adds a package-lock.json file in the project)
-4. Create an `index.js`
+2. [Initialize](#initialize)
+3. [Install](#install)
+4. [Create](#create) an `index.js`
     - require the `express` module
     - require the `body-parser` middleware (baked in)
     - Invoke Express to create the application server
@@ -28,21 +28,21 @@ published: true
     - Write the first route for the root file, with an arrow function
     - Write an arrow function to listen for incoming HTTP requests, and add some command line output to verify it's working
 5. Test everything is working
-6. Begin to create the connection to Postico from Node.js, using the `node-postgres` package (docs can be found [here](https://node-postgres.com/))
+6. [Connect](#connect) to Postico from Node.js, using the `node-postgres` package (docs can be found [here](https://node-postgres.com/))
     - Create the `queries.js` file
     - Create a "pool" of connections: make this Postico specific
-7. Now can begin to write routes that'll enable interfacing with the database with route: function combo
+7. [Write](#write) routes that'll enable interfacing with the database with route: function combo
     - GET all users with getUsers()
     - GET single user with getUserById()
     - POST single user with createUser()
     - PUT single user with updateUser()
     - DELETE single user with deleteUser()
-8. Export the methods from `queries.js`
-9. Import/require the methods to `index.js`
+8. [Export](#export) the methods from `queries.js`
+9. [Import](#import)/require the methods to `index.js`
 10. Verify via Postman
 
 
-# setup the database via the commandline
+# setup
 
 ```sql
 CREATE DATABASE node_api;
@@ -66,11 +66,11 @@ SELECT * FROM users;
 ```
 
 summary:
-This creates the database, adds a table, inserts two records and then verifies things are correct
+- This creates the database, adds a table, inserts two records and then verifies things are correct
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Initialize the directory with node
+# Initialize
 
 In whatever directory this app is going to be in, run the following:
 
@@ -79,11 +79,11 @@ npm init -y
 ```
 
 summary:
-this creates a `package.json` file in the directory and auto-populates the file with some boilerplate. leaving off the `-y` gives me some control
+ - this creates a `package.json` file in the directory and auto-populates the file with some boilerplate. leaving off the `-y` gives me some control
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Install necessary Node.js packages
+# Install
 
 ```
 npm i express pg
@@ -96,11 +96,12 @@ summary:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Create an `index.js` and create the server
+# Create
 
 And add the following:
 
 ```js
+// index.js
 const express = require("express")
 const bodyParser = require("body-parser")
 const app = express()
@@ -142,7 +143,7 @@ summary:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Create a connection with Postico (or some other 3rd party database client)
+# Connect
 
 ```
 touch queries.js
@@ -168,7 +169,7 @@ summary:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Write the functions to handle each database CRUD action
+# Write
 
 ```js
 // Get all users
@@ -247,7 +248,7 @@ summary:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Export the functions from `queries.js`
+# Export
 
 ```js
 module.exports = {
@@ -265,7 +266,7 @@ summary:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Import/require the functions in `index.js`
+# Import
 
 ```js
 // index.js
