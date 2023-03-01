@@ -246,3 +246,44 @@ summary:
 - these steps make sense, though the flexibility with the language and syntax are missing
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Export the functions from `queries.js`
+
+```js
+module.exports = {
+  getUsers,
+  getUserById,
+  createUser,
+  updateUser,
+  deleteUser
+}
+```
+
+summary:
+
+- this seems to "gather" all the methods, and make them available in other files within the directory
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Import/require the functions in `index.js`
+
+```js
+// index.js
+const db = require('./queries')
+```
+
+```js
+// index.js
+app.get('/users', db.getUsers)
+app.get('/users/:id', db.getUserById)
+app.post('/users', db.createUser)
+app.put('/users/:id', db.updateUser)
+app.delete('/users/:id', db.deleteUser)
+```
+
+summary:
+
+- This requires the functions that were exported from `queries.js`
+- This also creates the routes; so it's behaving like the routes file and Controller#action
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
