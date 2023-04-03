@@ -2,7 +2,7 @@
 layout: post
 published: true
 title:  "About Recursion"
-categories: recursion
+tags: recursion ruby
 ---
 
 What is recursion?

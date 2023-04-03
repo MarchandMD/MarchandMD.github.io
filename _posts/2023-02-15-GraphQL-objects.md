@@ -2,7 +2,7 @@
 layout: post
 published: false
 title: "GraphQL - working with Types and objects"
-categories: graphql http apis request response
+tags: GraphQL API
 ---
 
 | table of contents                |
@@ -21,7 +21,7 @@ Specifically, data is going to be grabbed from the NHL Api using traditional ReS
 
 Let's add a Type.
 
-A type is graphQL's version of a Model Object, or a PORO. A Type does the heavy lifting of behaving both like a serializer and a Model. 
+A type is graphQL's version of a Model Object, or a PORO. A Type does the heavy lifting of behaving both like a serializer and a Model.
 
 # testing
 
