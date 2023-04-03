@@ -2,7 +2,7 @@
 layout: post
 published: true
 title:  "Getting Started with Node.js"
-categories: node javascript back-end server
+tags: node javascript back-end server
 ---
 
 # Node.js
