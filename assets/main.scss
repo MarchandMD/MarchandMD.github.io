@@ -3,7 +3,7 @@
 @import "{{ site.theme }}";
 // @import "native.css";
 // @import "zenburn.css";
-// @import "monokai.css";
+@import "monokai.css";
 
 .site-header{
   background: url("/assets/images/mountains.jpg");
