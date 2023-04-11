@@ -33,12 +33,13 @@ plugins:
     - jekyll-paginate
     - jekyll-archives
 
-markdown: kramdown
+markdown: GFM
 highlighter: rouge
+syntax_highlighter: rouge
 
-kramdown:
-    input: GFM
-    syntax_highlighter: rouge
+# kramdown:
+    # input: GFM
+    # syntax_highlighter: rouge
 
 jekyll-archives:
     enabled: "all"
