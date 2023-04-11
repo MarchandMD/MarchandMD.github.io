@@ -3,7 +3,7 @@ layout: default
 published: true
 ---
 
-# How to set a mark
+# How to set a mark - 1
 
 When Vim is in Normal Mode, move the cursor to a location that you may like to return to. Perhaps a method name, or an argument.
 
@@ -29,9 +29,9 @@ I'd recommend doing something like "gg" to return the cursor back to the top of 
 
 To return the cursor back to the mark, use the following keystroke:
 
-```
+~~~
 `a
-```
+~~~
 The cursor is now directly on the mark that was named "a".
 
 There are 25 other possible marks that can be placed around the current document.
