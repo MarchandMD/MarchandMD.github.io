@@ -33,6 +33,7 @@ plugins:
     - jekyll-paginate
     - jekyll-archives
 
+highlighter: rouge
 markdown: kramdown
 
 kramdown:
