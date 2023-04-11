@@ -3,7 +3,7 @@ layout: default
 published: true
 ---
 
-# How to set a mark - 12345
+# How to set a mark - 123456
 
 When Vim is in Normal Mode, move the cursor to a location that you may like to return to. Perhaps a method name, or an argument.
 
