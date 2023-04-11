@@ -43,3 +43,5 @@ gem "boostrap-sass", "~> 0.0.2"
 gem "rouge", "~> 3.30"
 
 gem "kramdown", "~> 2.4"
+
+gem "kramdown-syntax-coderay", "~> 1.0"

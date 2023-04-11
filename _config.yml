@@ -34,10 +34,11 @@ plugins:
     - jekyll-archives
 
 markdown: kramdown
+highlighter: coderay
 
 kramdown:
     input: GFM
-    syntax_highlighter: rouge
+    syntax_highlighter: coderay
 
 jekyll-archives:
     enabled: "all"
