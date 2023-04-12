@@ -63,3 +63,7 @@
 .highlight .gu { color: #75715e !important; } /* Generic.Subheading & Diff Unified/Comment? */
 .highlight .gd { color: #f92672 !important; } /* Generic.Deleted & Diff Deleted */
 .highlight .gi { color: #a6e22e !important; } /* Generic.Inserted & Diff Inserted */
+
+.language-plaintext {
+  color: white;
+}
