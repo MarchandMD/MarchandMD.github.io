@@ -84,3 +84,10 @@
 .highlight .gu { color: #75715e !important; } /* Generic.Subheading & Diff Unified/Comment? */
 .highlight .gd { color: #f92672 !important; } /* Generic.Deleted & Diff Deleted */
 .highlight .gi { color: #a6e22e !important; } /* Generic.Inserted & Diff Inserted */
+
+pre,
+code {
+ font-size:15px;
+ border:1px solid #e8e8e8;
+ border-radius:3px;
+}
