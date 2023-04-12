@@ -1,15 +1,11 @@
 ---
 layout: post
-published: false # switch to true when I'm ready to publish this
-# title:  "Great googly Moogly" # whatever you'd like it to be; if omitted will default to file name title
-# date:   2021-08-24 16:54:42 -0600 # optional; can override filename date to re-order articles; but it must contain all those different parts; -0600 is MST
-# categories: # optional; I don't have any that I'm using right now
-# tags: YAML list or space-separated string
+published: true
 ---
 
 # How to build forms in Rails
 
-Rails offers three ways to build a form. It's possible, depending on the version of Rails being used, to see any of these tags for forms:
+Rails offers three ways to build a form. It's possible, depending on the version of Rails being used, that I may see any of these tags for forms:
 
 ```erb
  <%= form_with %>
@@ -17,15 +13,15 @@ Rails offers three ways to build a form. It's possible, depending on the version
  <%= form_for %> # deprecated
 ```
 
-This article will be a demonstration of building a form using form_with, since it's the most common and most versatile.
+This article will be a demonstration of building a form using `form_with`, since it's the most common and most versatile.
 
 Forms are used for most things that require user input. This includes search bars.
 
 There's many parts to the form_with helper, so let's dive right into it.
 
-# Using the rails form_with helper
+# Using the rails `form_with` helper
 
-To start, add the form_with helper in some expressed ERB tags. The form_with helper is a method that takes arguments and receives a block, so I'll use parenthesis to make it easy to see the arguments and block:
+To start, add the `form_with` helper in some expressed ERB tags. The `form_with` helper is a method that takes arguments and receives a block, so I'll use parenthesis to make it easy to see the arguments and block:
 
 ```erb
 <%= form_with(model: nil, scope: nil, url: nil, format: nil, local: true) do |form_builder_object| %>
@@ -39,17 +35,19 @@ The arguments are (among others):
 -   url
 -   format
 -   local
--   (review documentation for a complete list)
+-   [ review documentation for a complete list ](https://api.rubyonrails.org/v5.2.8/) - just be sure to update the version in the URL to the version of Rails you're interested in
 
 Since the arguments have colons (model:, scope:, url:, etc) they can be listed in any order within the parenthesis.
 
-This example is illustrative, and not exhaustive. For a complete resource, consult the api documentation for your current version of rails.
+This example is illustrative, and not exhaustive. For a complete resource, consult the [api documentation](https://api.rubyonrails.org/v5.2.8/) for your current version of rails.
 
-# Form_with arguments - url:
+# `form_with` arguments - the `url:` argument
 
-The "url:" argument will create a form that will POST to the path supplied.
+The `url:` argument is the URL I want to send the HTTP request to.
 
-for example, if there is a "users_path", then the following code would be needed:
+It IS possible to use path helpers for this (for example: `users_path`, `index_path` or whatever resource is available)
+
+If there's a `users_path`, then the needed code would be the following:
 
 ```erb
 <%= form_with(url: users_path) do |f| %>
@@ -61,9 +59,9 @@ And this would render the following HTML:
 <form action="/posts" method="post" data-remote="true"></form>
 ```
 
-# Form_with arguments - scope:
+# `form_with` arguments - `scope`:
 
-Add the "scope:" argument to prefix the name of the input fields; this is an ideal way to nest data within the params hash and improve security through the use of strong_params
+Add the `scope:` argument to prefix the name of the input fields; this is an ideal way to nest data within the params hash and improve security through the use of strong_params. Just don't forget to update the strong_params method in the controller.
 
 ```erb
 <%= form_with scope: :post, url: posts_path do |form| %>
@@ -77,9 +75,11 @@ And this will result in rendered HTML as such:
 <input type="text" name="post[title]" />
 ```
 
-# Form_with arguments - model:
+# `form_with` arguments - `model:`
 
-Of course, it's possible to achieve the same effect of "url:" and "scope:" with a single argument instead: "model:"
+Of course, it's possible to achieve the same effect of `url:` and `scope:` with a single argument instead: `model:`
+
+So, be mindful here. Using `model:` is more efficient, but it's more conventional as well and requires that the rest of the app has been using idiomatic conventions.
 
 ```erb
 <%= form_with model: Post.new do |form| %>
@@ -96,7 +96,7 @@ And this will achieve the same result as above:
 
 # How to prefill a form - Use an existing model object
 
-Instead of explicitly calling the model, if the routes file is using resources to create RESTful routes, then it's possible to use Rails magic to do a lot of heavy lifting.
+Instead of explicitly calling the model with `Post.new` (for example), if the routes file is using resources to create RESTful routes, then it's possible to use Rails magic to do a lot of heavy lifting.
 
 ```erb
 <%= form_with model: @post do |form| %>
@@ -111,5 +111,13 @@ The above is roughly equivalent to:
 <% end %>
 ```
 
+This will retrieve the data from the database, and populate the form. Would probably be better to use this for something like patching a record, or updating an entire record, which is in the example above.
 
+# conclusion
+
+There are other resources out there for the remaining arguments that can be passed. Specifically for HTML options and styling considerations.
+
+Also, keep in mind, the arguments to the `form_with` helper are keyword arguments, so their order does not matter.
+
+Hope that makes life easier for you.
 
