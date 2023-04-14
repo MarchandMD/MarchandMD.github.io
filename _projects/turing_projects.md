@@ -6,6 +6,7 @@ title: Projects completed while attending Turing School of Software and Design
 The mission of Turing School of Software & Design is _"to unlock human potential by training a diverse and inclusive student body to succeed in high fulfillment technical careers."_ Starting in August 2022 I began learning in an academic setting about enterprise-grade, production level Back-end software development.
 
 # Projects completed while attending Turing School of Software & Design:
+- [Board Together](https://board-together.surge.sh/) - Deployed to Surge.sh
 - [Rails Engine](#rails-engine) - Expose an API; Consume the same API
 - [Viewing Party](#viewing-party) - Consume an API; Authorize/Authenticate a User
 - [Little Esty Shop](https://best-esty-project.herokuapp.com/) - Deployed on Heroku
