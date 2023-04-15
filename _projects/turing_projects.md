@@ -3,7 +3,7 @@ layout: default
 title: Turing Projects
 ---
 
-The mission of Turing School of Software & Design is _"to unlock human potential by training a diverse and inclusive student body to succeed in high fulfillment technical careers."_ Starting in August 2022 I began learning in an academic setting about enterprise-grade, production level Back-end software development.
+The mission of [Turing School of Software & Design](https://turing.edu/) is _"to unlock human potential by training a diverse and inclusive student body to succeed in high fulfillment technical careers."_ Starting in August 2022 I began learning about enterprise-grade, production level Back-end software development in full-time, agile environment.
 
 # Projects completed while attending Turing School of Software & Design:
 - [Board Together](https://board-together.surge.sh/) - Deployed to Surge.sh
