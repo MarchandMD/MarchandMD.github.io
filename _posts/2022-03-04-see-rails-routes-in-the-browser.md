@@ -1,20 +1,33 @@
 ---
 layout: post
-published: true # switch to true when I'm ready to publish this
+published: true
 ---
 
-Instead of continuing to forgot how to do this, i'm going to write a quick article that'll hopefully make this shortcut stick.  
+|section|
+|-|
+|[Look at the routes](#look-at-the-routes)|
+|[Other ways to view the routes](#other-ways-to-view-the-routes)|
 
-There's a really handy shortcut to looking at the routes available when developing a Rails app. 
 
-In the browser address bar, if I just tack on `/rails/info/routes` i'll get all the routes right there in the browser; 10x more readable than in the console. 
+# Look at the routes
+There's a really handy shortcut to looking at the routes available when developing a Rails app.
 
-![routes](/assets/images/routes.jpg)
+When i've run `rails s` (which "spins up" the local server), I can see the application in the browser by going to (usually) https://localhost:3000
 
-There, hopefully `/rails/info/routes` will now stick in my brain! lol. And again, just to make sure I remember the command, it's `/rails/info/routes`. Sort of like RoR, but RiR lol. Maybe that'll do the trick. Something handy to trick my brain into firing. RiR. Rails, info, routes. and then just turn that into `/rails/info/routes`
+If i'm in the browser and the application is running, then in the browser address bar, if I just tack on `/rails/info/routes` to i'll get all the routes right there in the browser.
 
-That should stick now. 
+https://localhost:3000/rails/info/routes
 
-`/rails/info/routes`
+# other ways to view the routes
 
-`/rails/info/routes`
+the alternative way to view the routes is the standard
+
+```
+rails routes
+```
+
+It's also possible to look at the routes for a specific `-c` controller...
+```
+# assuming there's a controller for users...
+rails routes -c users
+```
