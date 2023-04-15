@@ -31,7 +31,7 @@ The problem arises when there are multiple arguments that need to be passed in a
 
 This is exactly what argument order dependency is: Requiring parameters to be passed in a specific order.
 
-This requirement arises naturally as part of learning to program.
+This dependency arises naturally as part of learning to program.
 
 One example is the `#initialize` method for any object. If an application is new, and an object is new, every time an instance of the new object occurs, I'd need to refer back to the `#initialize` method to make sure I'm passing the information in the correct order. This will be tedious.
 
