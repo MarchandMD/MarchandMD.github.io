@@ -8,7 +8,7 @@ published: true
 |[Remove Argument Order Dependency](#remove-argument-order-dependency)|
 |[The Caveat](#the-caveat)|
 |[In the Wild](#in-the-wild)|
-|[Conclustion](#conclusion)|
+|[Conclusion](#conclusion)|
 
 # Introduction
 
