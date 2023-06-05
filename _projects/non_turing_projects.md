@@ -7,8 +7,7 @@ Since 2018 I've been gradually building momentum, and projects. Starting from kn
 
 # Projects completed through self-directed study:
 - The blog/website you're looking at right now
-- hockeyStats
-- kapusSkate
+- [Predict-the-game](http://predict-the-game.herokuapp.com) - Fully deployed web application built with a Service-Oriented Architecture, using Oauth for user authentication, sessions for authorization, and Ruby on Rails
 - [Hangman Gem](#hangman-gem) - Ruby commandline game built as a Gem
 - [Mastermind](#mastermind) - Ruby commandline game
 - [Declarative Tic Tac Toe](#declarative-tic-tac-toe) - Building through declarative programming and RSpec
