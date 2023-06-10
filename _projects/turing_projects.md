@@ -11,7 +11,7 @@ The mission of [Turing School of Software & Design](https://turing.edu/) is _"to
 - [Viewing Party](#viewing-party) - Consume an API; Authorize/Authenticate a User
 - [Little Esty Shop](https://best-esty-project.herokuapp.com/) - Deployed on Heroku
 - [Relational Rails](https://github.com/MarchandMD/relational_rails) - One-to-Many Monolith solo project
-- Adopt Don't Shop
+- [Adopt Don't Shop](https://github.com/MarchandMD/adopt_dont_shop) - Group project using many-to-many and applying ORM and Object-Oriented Principles
 - Nightwriter
 - Futbol
 - Battleship
