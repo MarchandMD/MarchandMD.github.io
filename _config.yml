@@ -33,6 +33,8 @@ plugins:
     - jekyll-feed
     - jekyll-paginate
     - jekyll-archives
+    - jekyll-sitemap
+    - jekyll-seo-tag
 
 # highlighter: rouge
 markdown: kramdown
