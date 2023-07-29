@@ -31,7 +31,7 @@ According to the [Sidekiq Github wiki](https://github.com/sidekiq/sidekiq/wiki)
 
 It's a framework.
 
-It helps to perform jobs. Jobs are a Ruby class with that only have one method: `perform`. Jobs looks something like this:
+It helps to perform jobs. Jobs are a Ruby class with only one method: `perform`. Jobs looks something like this:
 
 ```ruby
 class EmailJob
@@ -61,7 +61,7 @@ A browser makes an HTTP request (the usual GET, POST, PUT, PATCH, DELETE actions
 
 Sidekiq can be seen in action when a job is called during that request/response cycle.
 
-Sidekiq is "happening" when the HTTP request/response cycle runs to it's normal completion..._and_ a job was triggered during that request/repsonse cycle to be run at some other time _outside of the HTTP request/response cycle_.
+Sidekiq is "happening" when the HTTP request/response cycle runs to completion..._and_ a job was triggered inside a controller action during that request/response cycle to be run at some other time _outside of the HTTP request/response cycle_.
 
 
 When the job is triggered, a Rails app that is using Sidekiq will then start using something called Redis to create a queue (aka a line...like a line of people waiting to get on a ride at Disneyland).
@@ -74,17 +74,15 @@ Redis is like PostgresQL; it's sort of an always on thing, at least locally.
 
 But this isn't about Redis, this is about Sidekiq.
 
-It's nearly impossible to talk about Sidekiq though without also mentioning Redis and Jobs.
+It's nearly impossible to talk about Sidekiq without also mentioning Redis and Jobs.
 
 # Why use Sidekiq (and Redis and Jobs)
 
-It's not at all necessary to use Sidekiq.
+It's not at all necessary to use Sidekiq in simple apps.
 
-Most likely everything you've built is simple.
+Most likely everything you've built is simple. You build an app. It displays some stuff using the usual CRUD behaviors.
 
-Build an app. Display the stuff. Do the usual CRUD things.
-
-Though if the app is bigger and could do other things behind the scenes, maybe it'd be a good idea to use a background job framework. Like Sidekiq.
+If the app is bigger and could do other things behind the scenes, maybe it'd be a good idea to use a background job framework. Like Sidekiq.
 
 Some examples of things to be done behind the scenes could be:
 
@@ -92,8 +90,6 @@ Some examples of things to be done behind the scenes could be:
 2. Send an email to a user who didn't complete a form
 3. Send an SMS when a package is picked up from a vendor
 3. Schedule a call to an external API, to update data
-4. Send delayed information
-5. Update data that doesn't need to be seen right away by the user
 
 Imagine a user signs up to a new website but doesn't add all their details. In order to get them to come back to the website tomorrow, it might be a good idea to create a background worker/job to trigger an email reminding them to finish setting up their profile.
 
@@ -105,7 +101,7 @@ For it to work, your machine needs to be running Redis (kind of like it runs Pos
 
 And your app needs to have a job in place that gets triggered as part of a normal HTTP request/response cycle.
 
-A browser makes an HTTP request, which goes to an app Controller and method. In that method is a call to a Job. The Job is then added to a queue on the Redis database. Sidekiq will then perform that Job.
+A browser makes an HTTP request, which goes to an app Controller and method. In that method is a call to a Job. The Job is then added to a queue on the Redis database. Sidekiq will then perform that Job later. HTTP response done. Sidekiq side job is queued up. 
 
 That's a high level overview of Sidekiq + Redis + Jobs.
 
