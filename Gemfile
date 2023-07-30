@@ -10,11 +10,6 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.2.0"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
-# gem "jekyll-theme-minimal"
-# gem "jekyll-theme-architect"
-# gem "jekyll-theme-cayman"
-# gem "jekyll-theme-primer"
-# gem "jekyll-theme-yat"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -38,12 +33,10 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", platforms: %i[mingw x64_mingw mswin]
 
-gem "faraday", "~> 2.7"
-
-gem "boostrap-sass", "~> 0.0.2"
-
 gem "rouge", "~> 3.30"
 
 gem "kramdown", "~> 2.4"
 
 gem "kramdown-syntax-coderay", "~> 1.0"
+
+gem "webrick", "~> 1.8"

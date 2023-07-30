@@ -64,6 +64,7 @@ include:
     - _edabit
     - leetcode
     - _projects
+    - blog
 
 show_excerpts:
     - true
@@ -72,7 +73,7 @@ page_excerpts:
     - true
 
 paginate: 5
-paginate_path: "/page:num/"
+paginate_path: "/blog/page:num/"
 
 # minima:
 #   skin: dark
