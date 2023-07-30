@@ -21,7 +21,7 @@
 title: Michael Marchand
 email: michaeldavidmarchand@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-    Learning. One Day at a time.
+  Learning. One Day at a time.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://MarchandMD.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -30,49 +30,49 @@ url: "https://MarchandMD.github.io" # the base hostname & protocol for your site
 theme: minima
 
 plugins:
-    - jekyll-feed
-    - jekyll-paginate
-    - jekyll-archives
-    - jekyll-sitemap
-    - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # highlighter: rouge
 markdown: kramdown
 
 kramdown:
-    input: GFM
-    syntax_highlighter: rouge
+  input: GFM
+  syntax_highlighter: rouge
 
 jekyll-archives:
-    enabled: "all"
-    layout: default
-    permalinks:
-        year: "/:year/"
-        month: "/:year/:month/"
-        day: "/:year/:month/:day/"
-        tag: "/tag/:name/"
-        category: "/category/:name/"
+  enabled: "all"
+  layout: default
+  permalinks:
+    year: "/:year/"
+    month: "/:year/:month/"
+    day: "/:year/:month/:day/"
+    tag: "/tag/:name/"
+    category: "/category/:name/"
 
 collections:
-    code_challenges:
-        output: true
-    projects:
-        output: true
+  code_challenges:
+    output: true
+  projects:
+    output: true
 
 include:
-    - _code_challenges
-    - _edabit
-    - leetcode
-    - _projects
-    - blog
+  - _code_challenges
+  - _edabit
+  - leetcode
+  - _projects
+  - blog
 
 show_excerpts:
-    - true
+  - true
 
 page_excerpts:
-    - true
+  - true
 
-paginate: 5
+paginate: 8
 paginate_path: "/blog/page:num/"
 
 # minima:
@@ -81,15 +81,15 @@ linkedin_username: mmarchand1
 github_username: marchandmd
 
 header_pages:
-    - portfolio.md
-    - Code_Challenges.md
-    - about.md
-    - index.html
+  - portfolio.md
+  - Code_Challenges.md
+  - about.md
+  - index.html
 
 sass:
-    load_paths:
-        - _sass
-        - /Users/michaelmarchand/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0
+  load_paths:
+    - _sass
+    - /Users/michaelmarchand/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
