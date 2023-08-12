@@ -1,6 +1,5 @@
 ---
 layout: page
-# permalink: /about/
 title: About
 ---
 
@@ -27,8 +26,3 @@ I’m interested in most new technologies and yes I have some preferences; My fi
 If that employer is you, then let’s talk…
 
 If you're still curious, it's probably time to actually speak directly with me by scheduling a :30 minute coffee chat
-
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/michaeldavidmarchand" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
