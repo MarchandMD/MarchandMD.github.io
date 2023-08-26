@@ -1,6 +1,5 @@
 ---
 layout: default
-title: coffee chat
 ---
 
 ### After the Calendly widget loads, feel free to schedule something with me; I'll receive an email after you schedule
