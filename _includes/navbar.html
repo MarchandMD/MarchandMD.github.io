@@ -1,6 +1,10 @@
 <nav class="navbar">
   <div class="container">
+    {% if page.url != "/" %}
     <a class="navbar-brand" href="/">Michael Marchand</a>
+    {% else %}
+    <a class="navbar-brand" href="/">A Blog about Stuff</a>
+    {% endif %}
     <div class="d-flex">
       <div class="nav-item">
         <a class="nav-link" aria-current="page" href="/">Home</a>
@@ -18,6 +22,5 @@
         <a class="nav-link" href="/coffee_chat">Coffee Chat</a>
       </div>
     </div>
-
   </div>
 </nav>
