@@ -2,45 +2,22 @@
 layout: default
 ---
 
-<div class="container">
-  <div id="top-pagination-links" class="text-center">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous"> Previous </a>
-    {% else %}
-    <span class="previous">Previous</span>
-    {% endif %} {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-    {% else %}
-    <span class="next">Next</span>
-    {% endif %}
-  </div>
-  <div class="home">
-    {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-    {%- endif -%}
-
-    {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title }}</h2>
-
-    <ul class="post-list">
-      {%- for post in paginator.posts -%}
+<div class="container row">
+  <div class="col-3">
+    <strong>Categories</strong>
+    <ul class="">
+      {% for tag in site.tags %}
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d,
-        %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-
-        {%- if site.show_excerpts -%} {{ post.content | strip_html |
-          truncatewords: 50 }} {%- endif -%}
+        <a href="#" class="">
+          {{ tag[0] }}
+        </a>
       </li>
-
-      {%- endfor -%}
+      {% endfor %}
     </ul>
-    <div class="text-center">
+  </div>
+  <div class="col-8">
+
+    <div id="top-pagination-links" class="text-center">
       {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path }}" class="previous"> Previous </a>
       {% else %}
@@ -49,10 +26,48 @@ layout: default
       <a href="{{ paginator.next_page_path }}" class="next">Next</a>
       {% else %}
       <span class="next">Next</span>
-      {% endif %} {%- endif -%}
+      {% endif %}
+    </div>
+    <div class="home">
+      {%- if page.title -%}
+      <h1 class="page-heading">{{ page.title }}</h1>
+      {%- endif -%}
+
+      {%- if site.posts.size > 0 -%}
+      <h2 class="post-list-heading">{{ page.list_title }}</h2>
+
+      <ul class="post-list">
+        {%- for post in paginator.posts -%}
+        <li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d,
+          %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+
+          {%- if site.show_excerpts -%} {{ post.content | strip_html |
+            truncatewords: 50 }} {%- endif -%}
+        </li>
+
+        {%- endfor -%}
+      </ul>
+      <div class="text-center">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous"> Previous </a>
+        {% else %}
+        <span class="previous">Previous</span>
+        {% endif %} {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        {% else %}
+        <span class="next">Next</span>
+        {% endif %} {%- endif -%}
+      </div>
+
     </div>
 
+
   </div>
-
-
 </div>

@@ -3,17 +3,23 @@ layout: page
 title: About
 ---
 
-[![github badge](https://img.shields.io/badge/github-profile-blue?style=for-the-badge&logo=appveyor)](https://www.github.com/marchandmd)
+<div class="d-flex justify-content-evenly mb-5">
+<a href="https://www.github.com/marchandmd">
+<img src="https://img.shields.io/badge/github-profile-blue?style=for-the-badge&logo=appveyor" />
+</a>
 
-[![resume badge](https://img.shields.io/badge/resume-pdf-green?style=for-the-badge&logo=appveyor)](/Michael_Marchand_technical_resume.pdf)
+<a href="/Michael_Marchand_technical_resume.pdf">
+<img src="https://img.shields.io/badge/resume-pdf-green?style=for-the-badge&logo=appveyor" />
+</a>
 
-[![linkedIn badge](https://img.shields.io/badge/LinkedIn-profile-blue?style=for-the-badge&logo=appveyor)](https://www.linkedin.com/in/mmarchand1/)
+<a href="https://www.linkedin.com/in/mmarchand1/">
+<img src="https://img.shields.io/badge/LinkedIn-profile-blue?style=for-the-badge&logo=appveyor" />
+</a>
 
-[![StackOverflow badge](https://img.shields.io/badge/stackOverflow-profile-orange?style=for-the-badge&logo=appveyor)](https://stackoverflow.com/users/8659405/j-r-bob-dobbs?tab=profile)
-
-# Hi!
-
-<img style="float: right; margin: 1em;" src="/assets/images/me.png" width="50%" height="50%">
+<a href="https://stackoverflow.com/users/8659405/j-r-bob-dobbs?tab=profile">
+<img src="https://img.shields.io/badge/stackOverflow-profile-orange?style=for-the-badge&logo=appveyor" />
+</a>
+</div>
 
 Over the course of the past several years I’ve taught myself to acquire programming languages, frameworks, logic and some computer science concepts.
 

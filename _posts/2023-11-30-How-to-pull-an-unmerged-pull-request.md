@@ -4,8 +4,11 @@ published: true
 title:  "How To Pull an Unmerged Pull Request Locally"
 date:   2023-11-30 00:54:42 -0600
 categories: personal update git github
-tag: personal update git github
+tags: personal update git github
 ---
+
+This article was adapated from [this StackOverflow answer](https://stackoverflow.com/questions/6743514/how-can-i-fetch-an-unmerged-pull-request-for-a-branch-i-dont-own)
+
 
 Someone else is working on the same github repository that you're working on.
 
