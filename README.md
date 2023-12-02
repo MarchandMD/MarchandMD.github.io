@@ -2,6 +2,10 @@
 
 Hello, and welcome to the public repo for my blog. This has been a repository for some of my learning exhaust as I've continued to learn and grow as a developer. It's been built from scratch (meaning I had no idea what Jekyll was before I started this project), as well as deployed for free on Github pages. I've had to learn a lot about various topics to deploy and maintain this site, and i'm looking forward to learning even more as I continue the journey.
 
+update: 12/02/2023
+
+Not really sure when I wrote the original paragraph above; but it's now December 02, 2023 and I've secured a position as a Staff Backend Rails Engineer. Obviously something I did has proven my ability and desire to learn; Now this blog has become sort of a thing I'm fond of; For that matter I'm going to keep it up and running. I'll revisit it as time and motivation allows, and hopefully it'll grow into something better than what it was. Thanks for stopping by! Always happy to make a new acquaintance via the interwebs, so feel free to drop me a line. My contact information is in the ether/miasma, so find that there if you really want to.
+
 ## Contents:
 
 -   [See it live](https://marchandmd.github.io/)

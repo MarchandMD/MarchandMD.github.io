@@ -7,18 +7,34 @@ categories: personal update git github
 tag: personal update git github
 ---
 
-After fighting with this a little too long, I want to capture this knowledge here so I can reference it in the future.
+Someone else is working on the same github repository that you're working on.
 
-I'll add a reference to the StackOverflow article in the future.
+You need to do a review of a Pull Request they just opened.
 
-For now here's how:
+You want to pull their code onto your local machine so you can review their work.
+
+How the heck do you do that?
+
+Go to the repository on Github.
+
+From the main page, click on the "Pull requests" tab.
+
+You'll see a list of open pull requests. Each pull request is numbered. Let's assume that we're looking at pull request number 1.
+
+Now that I know what the pull request number is, I can use the command line to fetch their pull request.
 
 ```
-git fetch origin pull/<pull-request-number>/head:<pull-request-number>
+git fetch origin pull/1/head:1
 ```
 
-This will create a new branch. The name of the new branch will be the pull request number.
+This will create a new branch with the title if. The name of the new branch will be the pull request number.
 
-After running the above command, will need to `git checkout <branch-name>`.... which would be something like `git checkout 1234` because the branch is the same name as the pull request number.
+After running the above command, you will need to switch to that branch using `git checkout 1`.
 
-Ok. Cool. Got it. Now to review their work....
+You've now switched to a local copy of their pull request.
+
+At this point I'd usually start the server and take a look at the changes that person made with their PR.
+
+Simple enough.
+
+Happy Coding.
