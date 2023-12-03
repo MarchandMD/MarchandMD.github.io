@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+tags: ruby rails routing http
 ---
 
 |section|

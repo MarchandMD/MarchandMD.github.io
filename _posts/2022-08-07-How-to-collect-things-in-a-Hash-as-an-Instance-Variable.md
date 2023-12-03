@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+tags: ruby hashes
 ---
 
 # How to collect things in a Hash, as an instance variable of an Object
@@ -105,4 +106,4 @@ This article doesn't discuss the difference between the less correct way, and th
 
 This can be helpful for aggregation of similar things, like orders for a restaurant.
 
-What are some other examples of data that might need to be aggregated? 
+What are some other examples of data that might need to be aggregated?

@@ -2,7 +2,7 @@
 layout: post
 published: false
 title:  "Creating a Search bar form"
-tag: rails search
+tags: rails searchbar ruby
 ---
 
 There's been a couple of times when I've needed to create a search bar feature for a project I'm building.

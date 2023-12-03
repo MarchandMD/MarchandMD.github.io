@@ -1,6 +1,7 @@
 ---
 layout: default
 published: true
+tags: vim
 ---
 
 # How to set a mark

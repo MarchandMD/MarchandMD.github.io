@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+tags: docker
 ---
 
 # Docker; My introduction to it

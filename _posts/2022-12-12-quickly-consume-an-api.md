@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+tags: turing rails ruby
 ---
 
 1. Get the API key

@@ -1,6 +1,7 @@
 ---
 layout: post
 published: false
+tags: activeRecord ruby rails models
 ---
 
 ## Intro

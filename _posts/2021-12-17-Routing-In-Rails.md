@@ -2,7 +2,7 @@
 layout: post
 published: true # switch to true when I'm ready to publish this
 title: "Visualize HTTP requests through a Rails App"
-tags: rails HTTP
+tags: rails http ruby
 ---
 
 ### introduction

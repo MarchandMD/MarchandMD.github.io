@@ -3,6 +3,7 @@ layout: post
 published: true
 title: "Setting up and using the Webmock gem"
 categories: gems ruby rails rspec apis
+tags: gems ruby rails rspec apis
 ---
 
 # Installation
@@ -53,5 +54,5 @@ This is a little more theoretical at this point.
 
 The endpoint would need to be faked in the `stub_request` method.
 
-The expected response would need to be "serialized". 
+The expected response would need to be "serialized".
 

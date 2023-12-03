@@ -2,6 +2,7 @@
 published: true
 layout: post
 title: "Sidekiq + Redis + Background Jobs (aka workers)"
+tags: sidekiq ruby rails
 ---
 
 |ToC|
@@ -101,7 +102,7 @@ For it to work, your machine needs to be running Redis (kind of like it runs Pos
 
 And your app needs to have a job in place that gets triggered as part of a normal HTTP request/response cycle.
 
-A browser makes an HTTP request, which goes to an app Controller and method. In that method is a call to a Job. The Job is then added to a queue on the Redis database. Sidekiq will then perform that Job later. HTTP response done. Sidekiq side job is queued up. 
+A browser makes an HTTP request, which goes to an app Controller and method. In that method is a call to a Job. The Job is then added to a queue on the Redis database. Sidekiq will then perform that Job later. HTTP response done. Sidekiq side job is queued up.
 
 That's a high level overview of Sidekiq + Redis + Jobs.
 

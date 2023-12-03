@@ -1,6 +1,8 @@
 ---
 layout: post
 published: true
+tags: ruby jekyll liquid blogging
+title: Learning about Jekyll Plug-ins
 ---
 
 # Intro

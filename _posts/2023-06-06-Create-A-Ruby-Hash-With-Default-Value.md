@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+tags: ruby
 ---
 |section|
 |-------|
@@ -91,5 +92,5 @@ Next time I call `new_hash`, i'll get the Hash I'm looking for.
 # Notes
 
 1. This article started as a way to use `group_by`, but I quickly realized that the `group_by` method wasn't doing anything that `each` didn't do.
-   
+
 2. Really, the main thrust of this is about how to create a new Hash object in a dynamic way with a default value of 0 for each new element.

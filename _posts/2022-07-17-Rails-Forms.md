@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+tags: rails forms ruby
 ---
 
 # How to build forms in Rails

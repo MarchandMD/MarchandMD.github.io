@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-tags: ruby
+tags: ruby methods
 ---
 
 # Intro

@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+tags: ruby rails csv
 ---
 
 # How to write to a File or CSV file in Ruby

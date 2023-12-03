@@ -3,6 +3,7 @@ layout: post
 published: true
 title: "Setting up and using VCR gem"
 categories: gems ruby rails rspec apis
+tags: gems ruby rails rspec apis
 ---
 
 1. `bundle add vcr -g 'test, development'`
@@ -49,7 +50,7 @@ you can configure VCR to handle this request:
 [1] https://www.relishapp.com/vcr/vcr/v/6-1-0/docs/configuration/debug-logging
 [2] https://www.relishapp.com/vcr/vcr/v/6-1-0/docs/getting-started
 [3] https://www.relishapp.com/vcr/vcr/v/6-1-0/docs/configuration/allow-http-connections-when-no-cassette
-[4] https://www.relishapp.com/vcr/vcr/v/6-1-0/docs/configuration/ignore-request 
+[4] https://www.relishapp.com/vcr/vcr/v/6-1-0/docs/configuration/ignore-request
 ================================================================================
 
 ```

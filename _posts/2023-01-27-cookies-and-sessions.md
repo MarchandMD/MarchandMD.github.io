@@ -3,6 +3,7 @@ layout: post
 published: false
 title:  "Cookies, and Sessions"
 categories: cookies sessions rails controllers
+tags: ruby cookies sessions rails controllers
 ---
 
 There's too much confusion around these two ideas and there really doesn't need to be.

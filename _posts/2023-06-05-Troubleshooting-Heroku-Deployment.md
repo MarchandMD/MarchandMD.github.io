@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+tags: ruby rails heroku deployment
 ---
 |section|
 |-------|
@@ -71,7 +72,7 @@ Again, I was on StackOverflow, and I found a question of a user who was attempti
 
 And of course, run through the git cycle, and push to Github.
 
-Boom. Deploy to Heroku successful. Problem solved. 
+Boom. Deploy to Heroku successful. Problem solved.
 
 # Notes
 

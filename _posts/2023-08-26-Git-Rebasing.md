@@ -1,6 +1,7 @@
 ---
 published: true
 layout: post
+tags: git github
 ---
 
 |table of contents|
