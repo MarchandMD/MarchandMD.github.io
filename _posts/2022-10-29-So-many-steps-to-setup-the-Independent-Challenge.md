@@ -2,6 +2,7 @@
 layout: post
 published: true
 tags: turing ruby rails
+tag: Turing School of Software and Design
 ---
 
 ## Setting it Up

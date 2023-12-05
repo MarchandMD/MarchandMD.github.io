@@ -1,9 +1,10 @@
 ---
 layout: page
-title: Tech Stack
+title: Topics I've Written About
 ---
 
-Nothing here yetssss
+Below are most of the articles I've written, grouped by topic
+
 
 {% for tag in site.tags %}
 <h3>{{ tag[0] }}</h3>
@@ -13,3 +14,4 @@ Nothing here yetssss
     {% endfor %}
   </ul>
 {% endfor %}
+
