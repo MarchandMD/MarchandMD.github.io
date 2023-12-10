@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Turbo Streams are so cool!
-published: true
+published: false
 tags: turbo turbo-streams rails ruby
 ---
 
@@ -15,4 +15,3 @@ In a view, add a `turbo_frame_tag` like so:
   # acted upon by the turbo stream eventually
 <% end %>
 ```
-
