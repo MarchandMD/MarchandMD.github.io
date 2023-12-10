@@ -3,29 +3,37 @@ layout: page
 title: About
 ---
 
-<div class="d-flex justify-content-evenly mb-5">
-<a href="https://www.github.com/marchandmd">
-<img src="https://img.shields.io/badge/github-profile-blue?style=for-the-badge&logo=appveyor" style="box-shadow: 5px 5px"/>
-</a>
+<div class="row m-3">
+  <div class="col-sm-12 col-md-3 badges">
+    <a href="https://www.github.com/marchandmd">
+      <img src="https://img.shields.io/badge/github-profile-blue?style=for-the-badge&logo=appveyor" style="box-shadow: 5px 5px" />
+    </a>
+  </div>
 
-<a href="/Michael_Marchand_technical_resume.pdf">
-<img src="https://img.shields.io/badge/resume-pdf-green?style=for-the-badge&logo=appveyor" style='box-shadow: 5px 5px 5px' />
-</a>
+  <div class="col-sm-12 col-md-3 badges">
+    <a href="/Michael_Marchand_technical_resume.pdf">
+      <img src="https://img.shields.io/badge/resume-pdf-green?style=for-the-badge&logo=appveyor" style='box-shadow: 5px 5px 5px' />
+    </a>
+  </div>
 
-<a href="https://www.linkedin.com/in/mmarchand1/">
-<img src="https://img.shields.io/badge/LinkedIn-profile-blue?style=for-the-badge&logo=appveyor" style='box-shadow: 5px 5px 5px'  />
-</a>
+  <div class="col-sm-12 col-md-3 badges">
+    <a href="https://www.linkedin.com/in/mmarchand1/">
+      <img src="https://img.shields.io/badge/LinkedIn-profile-blue?style=for-the-badge&logo=appveyor" style='box-shadow: 5px 5px 5px' />
+    </a>
+  </div>
 
-<a href="https://stackoverflow.com/users/8659405/j-r-bob-dobbs?tab=profile">
-<img src="https://img.shields.io/badge/stackOverflow-profile-orange?style=for-the-badge&logo=appveyor" style='box-shadow: 5px 5px 5px' />
-</a>
+  <div class="col-sm-12 col-md-3 badges">
+    <a href="https://stackoverflow.com/users/8659405/j-r-bob-dobbs?tab=profile">
+      <img src="https://img.shields.io/badge/stackOverflow-profile-orange?style=for-the-badge&logo=appveyor" style='box-shadow: 5px 5px 5px' />
+    </a>
+  </div>
 </div>
 
 As early as 2018 I was teaching myself to acquire programming languages, frameworks, logic and some computer science concepts.
 
-It started with "Learn to Program" by Chistopher Pine.
+It started with "Learn to Program" by Christopher Pine.
 
-Eventually I enrolled in a 7 months full-time bootcamp, and I’ve refined that drive and commitment through Turing School of Software and Design.
+Eventually I enrolled in a 7 month full-time boot-camp, and I’ve refined that drive and commitment through Turing School of Software and Design.
 
 [**Turing School Of Software And Design**](https://www.turing.edu) aims to _unlock human potential by training a diverse and inclusive student body to succeed in high fulfillment technical careers._ And they are achieving their aim quite successfully.
 

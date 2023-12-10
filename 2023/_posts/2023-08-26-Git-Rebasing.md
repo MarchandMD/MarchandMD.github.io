@@ -4,13 +4,17 @@ layout: post
 tags: git github
 ---
 
-|table of contents|
-|---|
-|[Learning How Git Rebase works](#learning-how-git-rebase-works)|
-|[When to Rebase](#when-to-rebase)|
-|[What's Happening](#whats-happening)|
-|[A New Mental Model](#a-new-mental-model)|
-|[Conclusion](#conclusion)|
+<details>
+<summary>Table of Contents</summary>
+<ul>
+  
+</ul>
+[Learning How Git Rebase works](#learning-how-git-rebase-works)
+[When to Rebase](#when-to-rebase)
+[What's Happening](#whats-happening)
+[A New Mental Model](#a-new-mental-model)
+[Conclusion](#conclusion)
+</details>
 
 # Learning How Git Rebase works
 
