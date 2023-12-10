@@ -1,7 +1,6 @@
 ---
 layout: post
 published: false
-categories: rspec
 tags: rspec rails ruby
 ---
 

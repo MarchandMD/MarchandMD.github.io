@@ -2,7 +2,6 @@
 layout: post
 published: false
 title:  "Testing an HTTP request in Rails with RSpec"
-categories: testing rspec http api
 tags: testing rspec http api rails ruby
 ---
 

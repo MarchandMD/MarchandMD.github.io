@@ -4,11 +4,21 @@ layout: default
 
 <div class="container row">
   <div class="col-3">
-    <strong>Categories</strong>
+    <strong>Years</strong>
+    <ul class="">
+      {% for category in site.categories %}
+      <li>
+        <a href={% link categories.md  %}>
+          {{ category[0] }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <strong>Tags</strong>
     <ul class="">
       {% for tag in site.tags %}
       <li>
-        <a href="#" class="">
+        <a href={% link topics.md %}#{{ tag[0] }} class="">
           {{ tag[0] }}
         </a>
       </li>

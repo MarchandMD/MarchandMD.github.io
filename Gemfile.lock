@@ -79,6 +79,7 @@ PLATFORMS
   arm64-darwin-20
 
 DEPENDENCIES
+  coderay (~> 1.1)
   jekyll (~> 4.2.0)
   jekyll-archives
   jekyll-feed (~> 0.12)

@@ -1,8 +1,7 @@
 ---
 layout: post
 published: true
-tags: turing rails ruby
-tag: Turing School of Software and Design
+tags: turing_school rails ruby
 ---
 
 1. Get the API key

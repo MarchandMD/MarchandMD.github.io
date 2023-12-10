@@ -3,7 +3,6 @@ layout: post
 published: false
 title:  "Entry 2"
 date:   2021-08-25 15:54:42 -0600
-categories: personal update
 tag: personal update
 ---
 

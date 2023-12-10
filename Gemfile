@@ -40,3 +40,5 @@ gem "kramdown", "~> 2.4"
 gem "kramdown-syntax-coderay", "~> 1.0"
 
 gem "webrick", "~> 1.8"
+
+gem "coderay", "~> 1.1"

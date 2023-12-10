@@ -3,7 +3,6 @@ layout: post
 published: true
 title:  "How To Pull an Unmerged Pull Request Locally"
 date:   2023-11-30 00:54:42 -0600
-categories: git github
 tags: git github
 ---
 

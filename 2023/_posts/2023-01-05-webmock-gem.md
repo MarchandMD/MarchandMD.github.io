@@ -2,7 +2,6 @@
 layout: post
 published: true
 title: "Setting up and using the Webmock gem"
-categories: gems ruby rails rspec apis
 tags: gems ruby rails rspec apis
 ---
 

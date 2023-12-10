@@ -1,8 +1,7 @@
 ---
 layout: post
 published: true
-tags: turing ruby rails
-tag: Turing School of Software and Design
+tags: turing_school ruby rails
 ---
 
 ## Setting it Up

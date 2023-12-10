@@ -1,10 +1,10 @@
-<footer class="site-footer h-card">
+<footer class="site-footer">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
 
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-12 col-md-6 text-center">
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
@@ -20,16 +20,18 @@
       </div>
 
 
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6 text-center">
         {%- include social.html -%}
       </div>
 
 
-      <div class="col-sm-6">
-        <p>{{- site.description | escape -}}</p>
-      </div>
     </div>
 
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <strong><i>{{- site.description | escape -}}</i></strong>
+      </div>
+    </div>
   </div>
 
 </footer>
