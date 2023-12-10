@@ -52,6 +52,8 @@ pre code {
   transform: rotate(-10deg);
   box-shadow: 5px 5px 5px;
   transition: 4s;
+  width: 300px;
+  height: auto;
 }
 
 #index-image:hover {
@@ -67,9 +69,8 @@ pre code {
   padding: 8px;
 }
 
-.fill {
-min-height: 100%;
-height: 100%;
+.no-bullets {
+  list-style-type: none;
 }
 
 @media screen and (min-width: 769px) {
