@@ -70,7 +70,7 @@ So the turbo_frame_tag that was first added at the beginning of this article wil
 
 One such turbo stream file might look like this:
 
-```ruby
+```erb
 <%= turbo_stream.update "some_id" do %>
   # code here
 <% end %>
@@ -89,7 +89,7 @@ Now it's possible to use more than just #update. and it's possible to conditiona
 
 One thing that might be neat to try to do is use all of the different turbo stream actions within a given turbo stream file; So the turbo_stream.erb might look like this:
 
-```ruby
+```erb
 # adding all seven possible turbo stream actions to the same id, from the same file
 <%= turbo_stream.append "some_id" do %>
   # code here
