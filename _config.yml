@@ -38,7 +38,7 @@ plugins:
 
 markdown: kramdown
 
-google_analytics: ${{ vars.GOOGLE_ANALYTICS }}
+google_analytics: G-NXV2EVGJL1
 
 jekyll-archives:
   enabled: "all"
