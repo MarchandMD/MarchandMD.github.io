@@ -38,6 +38,8 @@ plugins:
 
 markdown: kramdown
 
+google_analytics: childsplay
+
 jekyll-archives:
   enabled: "all"
   layout: default
