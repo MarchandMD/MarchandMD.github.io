@@ -52,6 +52,8 @@ pre code {
   transform: rotate(-10deg);
   box-shadow: 5px 5px 5px;
   transition: 4s;
+  width: 300px;
+  height: auto;
 }
 
 #index-image:hover {
@@ -60,4 +62,19 @@ pre code {
   border-radius: 10px;
   transform: rotate(10deg);
   box-shadow: 5px 5px 5px;
+}
+
+.badges {
+  text-align: center;
+  padding: 8px;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 769px) {
+  .badges {
+    padding: 20px;
+  }
 }
