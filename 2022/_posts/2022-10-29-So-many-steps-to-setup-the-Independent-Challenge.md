@@ -21,7 +21,7 @@ I wrote this article while I was in mod 2 (2208-BE, 'sup?), because there were a
 
 Here's a list that will hopefully help you get from "git clone" to doing the first user story. Good luck!
 
-\* - means optional
+(\* means optional)
 
 ### The List of Steps:
 
