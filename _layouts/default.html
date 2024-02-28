@@ -5,17 +5,16 @@
 
   {%- include header.html -%}
   {%- include navbar.html -%}
-  <body>
+  <body class="container">
 
-    <main class="page-content d-flex justify-content-center align-items-center" aria-label="Content">
+    <main class="page-content d-flex flex-column justify-content-evenly align-items-center" aria-label="Content">
 
       {% if page.url != "/" %}
       <div class="wrapper">
         {% else %}
-        <div class="">
-          {% endif %}
-          {{ content }}
-        </div>
+        {% endif %}
+        {{ content }}
+      </div>
     </main>
 
     {% include footer.html %}
@@ -23,6 +22,8 @@
   </body>
 
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <script src="{{ base.url | prepend: site.url  }}/assets/javascript/script.js"></script>
+
 
 </html>
