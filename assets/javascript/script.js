@@ -31,7 +31,6 @@ function animateHomePage(title, heading, subHeading) {
   });
 };
 
-animateHomePage(homePageName, headline, subHeadline);
 
 function loadLinks() {
   if (window.location.pathname == "/") {
@@ -46,3 +45,18 @@ function loadLinks() {
 };
 
 loadLinks("/");
+animateHomePage(homePageName, headline, subHeadline);
+
+
+function stickyNav() {
+  let navBar = document.querySelector('.navbar');
+  let sticky = navBar.offsetTop;
+
+  if (window.scrollY > 200) {
+    navBar.classList.add("sticky");
+  } else {
+    navBar.classList.remove("sticky");
+  }
+}
+
+window.addEventListener('scroll', stickyNav);

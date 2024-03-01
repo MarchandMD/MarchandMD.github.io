@@ -7,11 +7,17 @@
 nav {
   background-color: $palette-color1;
   padding: 0.5rem;
+  border-radius: 0 0 5px 5px;
 }
 
 .nav-link,
 .navbar-brand {
   color: white;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 .site-header {
