@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-tags: turing_school rails ruby
+tags: turing_school rails ruby figaro
 ---
 
 1. Get the API key
