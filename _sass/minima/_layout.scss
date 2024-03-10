@@ -103,6 +103,15 @@
 /**
  * Site footer
  */
+#footer-row {
+  padding: 2em 0;
+  border-top: solid lightgray;
+}
+
+.pagination {
+  padding: 1rem;
+}
+
 .site-footer {
   border-top: 3px solid $grey-color-light;
   padding: $spacing-unit 0;
@@ -171,10 +180,6 @@
 /**
  * Page content
  */
-.page-content {
-  padding: $spacing-unit 0;
-  flex: 1;
-}
 
 .page-heading {
   @include relative-font-size(2);

@@ -1,44 +1,52 @@
 ---
 layout: default
 ---
-
-<div class="container row">
-  <div class="col-3">
-    <strong>Years</strong>
-    <ul class="">
-      {% for category in site.categories %}
-      <li>
-        <a href={% link categories.md  %}>
-          {{ category[0] }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-    <strong>Tags</strong>
-    <ul class="">
-      {% for tag in site.tags %}
-      <li>
-        <a href={% link topics.md %}#{{ tag[0] }} class="">
-          {{ tag[0] }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
+<div class="row pagination">
+  <div id="top-pagination-links" class="text-center">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous"> Previous </a>
+    {% else %}
+    <span class="previous">Previous</span>
+    {% endif %} {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+    <span class="next">Next</span>
+    {% endif %}
   </div>
-  <div class="col-8">
+</div>
 
-    <div id="top-pagination-links" class="text-center">
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous"> Previous </a>
-      {% else %}
-      <span class="previous">Previous</span>
-      {% endif %} {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-      {% else %}
-      <span class="next">Next</span>
-      {% endif %}
+<div class="row">
+  <div class="col-md-3 d-none d-md-flex flex-column" id="years-and-tags">
+    <div class="py-3">
+      <ul class="list-group list-unstyled text-center">
+        <li>Years</li>
+        {% for category in site.categories %}
+        <li class="">
+          <a href={% link categories.md  %}>
+            {{ category[0] }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
-    <div class="home">
+
+    <div>
+      <ul class="list-unstyled text-center">
+        <li>Tags</li>
+        {% for tag in site.tags %}
+        <li>
+          <a href={% link topics.md %}#{{ tag[0] }} class="">
+            {{ tag[0] }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="col">
+
+    <div>
       {%- if page.title -%}
       <h1 class="page-heading">{{ page.title }}</h1>
       {%- endif -%}
@@ -64,20 +72,24 @@ layout: default
 
         {%- endfor -%}
       </ul>
-      <div class="text-center">
-        {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous"> Previous </a>
-        {% else %}
-        <span class="previous">Previous</span>
-        {% endif %} {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-        {% else %}
-        <span class="next">Next</span>
-        {% endif %} {%- endif -%}
-      </div>
-
+      {%- endif -%}
     </div>
 
 
+  </div>
+</div>
+
+
+<div class="row pagination">
+  <div id="top-pagination-links" class="text-center">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous"> Previous </a>
+    {% else %}
+    <span class="previous">Previous</span>
+    {% endif %} {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+    <span class="next">Next</span>
+    {% endif %}
   </div>
 </div>

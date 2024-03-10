@@ -49,7 +49,7 @@ animateHomePage(homePageName, headline, subHeadline);
 
 
 function stickyNav() {
-  let navBar = document.querySelector('.navbar');
+  let navBar = document.querySelector('#nav-bar-row');
   let sticky = navBar.offsetTop;
 
   if (window.scrollY > 200) {
