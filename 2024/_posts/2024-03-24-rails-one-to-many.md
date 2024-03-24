@@ -123,3 +123,18 @@ first_player.team.name
 
 This proves that the association was successfully created.
 
+# Bonus: dependent: :destroy
+
+Since these two models are related, it's a good idea to destroy all the MANY items when the ONE item is destroyed.
+
+On the "parent" object (the ONE model) add this to the end of the `has_many` clause:
+
+```ruby
+has_many :players, dependent: :destroy
+```
+
+Now, when a Team is deleted, all the related Player objects will be deleted.
+
+A good way to think about this is, the parent is responsible for the children. The ONE is responsible for the MANY.
+
+
