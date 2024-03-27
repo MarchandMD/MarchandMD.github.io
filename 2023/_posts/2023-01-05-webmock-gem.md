@@ -5,19 +5,19 @@ title: "Setting up and using the Webmock gem"
 tags: gems ruby rails rspec apis
 ---
 
-# Installation
+### Installation
 
 This gem is useful for faking API requests. Instead of a test suite making API calls for many unit tests, adding `Webmock` to a rails application Gemfile will "fake" those API calls.
 
 First I need to add the gem to the application. I usually add it directly from the commandline: `bundle add webmock -g 'test'`
 
-# Setting it up
+### Setting it up
 
 Now that the gem is available to me, I need to setup the application to access the cool features it makes available.
 
 I've only ever used RSpec, so this would be added to the `spec/spec_helper`: `require 'webmock/rspec'`. Can be placed at the top of the file.
 
-# Prove Webmock is working
+### Prove Webmock is working
 
 If a test file is setup to make an API call, now would be a good time to run the test suite.
 
@@ -25,7 +25,7 @@ At this point, there's most likely a big error titled something like: `WebMock::
 
 This means Webmock is in place and is blocking the test suite from making API calls. Good.
 
-# Stub the API requests: Basic
+### Stub the API requests: Basic
 
 In the unit test add the following code:
 
@@ -47,7 +47,7 @@ Could do the same thing with POSTMAN, but instead of pasting the response into t
 
 Any of these work.
 
-# Stub the API requests: With no API available
+### Stub the API requests: With no API available
 
 This is a little more theoretical at this point.
 

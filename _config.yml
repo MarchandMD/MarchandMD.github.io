@@ -36,8 +36,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-markdown: kramdown
-
 google_analytics: G-NXV2EVGJL1
 
 jekyll-archives:

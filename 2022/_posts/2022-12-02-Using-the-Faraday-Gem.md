@@ -40,7 +40,7 @@ The file is plural, because there will be multiple endpoints accessed...and then
 Add this code:
 
 ```ruby
-# app/services/tmdb_services.rb
+### app/services/tmdb_services.rb
 
 def conn
   Faraday.new(url: "https://api.themoviedb.org") do |faraday|

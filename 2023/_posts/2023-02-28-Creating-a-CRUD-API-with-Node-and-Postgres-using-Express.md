@@ -6,13 +6,13 @@ tags: NodeJS PostgresQL Express
 
 <a name="readme-top"></a>
 
-# prerequisites
+### prerequisites
 
 1. Node
 2. Postgresql
 3. Postico
 
-# steps to complete
+### steps to complete
 
 1. [Setup](#setup)
     - create a database in Postgres
@@ -43,7 +43,7 @@ tags: NodeJS PostgresQL Express
 10. Verify via Postman
 
 
-# setup
+### setup
 
 ```sql
 CREATE DATABASE node_api;
@@ -71,7 +71,7 @@ summary:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Initialize
+### Initialize
 
 In whatever directory this app is going to be in, run the following:
 
@@ -84,7 +84,7 @@ summary:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Install
+### Install
 
 ```
 npm i express pg
@@ -97,7 +97,7 @@ summary:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Create
+### Create
 
 And add the following:
 
@@ -144,7 +144,7 @@ summary:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Connect
+### Connect
 
 ```
 touch queries.js
@@ -170,7 +170,7 @@ summary:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Write
+### Write
 
 ```js
 // Get all users
@@ -249,7 +249,7 @@ summary:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Export
+### Export
 
 ```js
 module.exports = {
@@ -267,7 +267,7 @@ summary:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Import
+### Import
 
 ```js
 // index.js

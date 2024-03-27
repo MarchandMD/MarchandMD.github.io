@@ -3,17 +3,17 @@ layout: post
 published: true
 tags: ruby rails heroku deployment
 ---
-|section|
-|-------|
-|[Introduction](#introduction)|
-|[Requirements](#requirements)|
-|[Steps to Deploy](#steps-to-deploy)|
-|[Attempted Hotfixes](#attempted-hotfixes)|
-|[The Actual Fix](#the-actual-fix)|
-|[Notes](#notes)|
+| section                                   |
+| ----------------------------------------- |
+| [Introduction](#introduction)             |
+| [Requirements](#requirements)             |
+| [Steps to Deploy](#steps-to-deploy)       |
+| [Attempted Hotfixes](#attempted-hotfixes) |
+| [The Actual Fix](#the-actual-fix)         |
+| [Notes](#notes)                           |
 
 
-# Introduction
+### Introduction
 
 If I'm going to deploy a site, I'm responsible for handling the DevOps portion of deployment.
 
@@ -23,7 +23,7 @@ Failed to deploy because the assets did not precompile.
 
 This article is a note to myself about how I ultimately solved this error during deployment, so I can minimize the headache during the eventual next deploy....at least to Heroku.
 
-# Requirements
+### Requirements
 
 Since this is mostly a note to myself, I know what my starting point is.
 
@@ -36,7 +36,7 @@ In the off chance that you're reading this and you're from _the wild_ than here'
 - It's all built with Ruby and Rails
 - Node and NPM installed (just run `node -v` and `npm -v` to determine if you're on the same page)
 
-# Steps to Deploy
+### Steps to Deploy
 
 I don't deploy to Heroku everyday, so obviously it's a skill that I can lose quickly.
 
@@ -53,7 +53,7 @@ it's this last step that would typically result in the build failure, due to an 
 
 What will follow is a list of unsuccessful steps I took. Then I'll share the step that actually fixed my issue.
 
-# Attempted Hotfixes
+### Attempted Hotfixes
 
 1. I first tried to remove all the images from `app/assets/images`. I'm usually not using a ton of images, and it's pretty easy for me to just delete all the images. This is my first step because in the past this worked. However, this step has failed to fix the issue more times than it has resolved the issue. But it worked once and it's easy, so this is usually where I start. This most recent effort needed more than this. The search continues....
 
@@ -61,7 +61,7 @@ What will follow is a list of unsuccessful steps I took. Then I'll share the ste
 
 3. At this point I turned to StackOverflow. A unique fix I came across was installing a Node package. I have Node and NPM on my machine. the package I installed was called "terser". So I ran `npm install -g terser`. For situations like this I don't mind installing these packages globally; If I install it globally than I don't have to ensure where it's installed. I equate this to killing a mosquito with a sledgehammer. At this point, I'm reaching for larger and larger tools to kill that annoying buzz. Again, no dice after pushing to Github and attempting to deploy. *
 
-# The Actual Fix
+### The Actual Fix
 The previous solution is where I began to gain confidence and felt like I was no longer reaching for bigger and bigger sledgehammers (ala Gallagher....YouTube him, Kids, for some low-brow humor), and instead I felt like I might have found a scalpel of a solution.
 
 Again, I was on StackOverflow, and I found a question of a user who was attempting to deploy via a different service, but experiencing a similar problem. One of the lesser solutions suggested the following:
@@ -74,7 +74,7 @@ And of course, run through the git cycle, and push to Github.
 
 Boom. Deploy to Heroku successful. Problem solved.
 
-# Notes
+### Notes
 
 1. `heroku stack:set heroku-20` is a short-term solution; as of the publishing of this article (2023-06-05) this solution works; the reason I have to do this is because of the version of Ruby (2.7.4) my Rails project is using. The reason this is a short-term solution is because that version of Ruby is nearing it's "End-of-life" support (which sounds super ominous), aka EOL. Setting the stack to `heroku-20` enables deployment to Heroku. There is another stack that is available.... `heroku-22`. Eventually it may behoove me to learn more about this. As well as updating to a more current version of Ruby and/or Rails. But this article is more about solving the problems I have been having recently.
 

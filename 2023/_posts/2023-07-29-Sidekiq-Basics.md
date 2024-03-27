@@ -5,15 +5,15 @@ title: "Sidekiq + Redis + Background Jobs (aka workers)"
 tags: sidekiq ruby rails
 ---
 
-|ToC|
-|---|
-|[Intro](#intro)|
-|[What is Sidekiq](#what-is-sidekiq)|
-|[When is Sidekiq in action](#when-is-sidekiq-in-action)|
-|[Why use Sidekiq](#why-use-sidekiq-and-redis-and-jobs)|
-|[Conclusion](#conclusion)|
+| ToC                                                     |
+| ------------------------------------------------------- |
+| [Intro](#intro)                                         |
+| [What is Sidekiq](#what-is-sidekiq)                     |
+| [When is Sidekiq in action](#when-is-sidekiq-in-action) |
+| [Why use Sidekiq](#why-use-sidekiq-and-redis-and-jobs)  |
+| [Conclusion](#conclusion)                               |
 
-# Intro
+### Intro
 
 This is about Sidekiq. What it is, when it is in action, and why it's used.
 
@@ -24,7 +24,7 @@ To get everything you need from this article you should have a basic understandi
 
 
 
-# What is Sidekiq?
+### What is Sidekiq?
 
 According to the [Sidekiq Github wiki](https://github.com/sidekiq/sidekiq/wiki)
 
@@ -52,7 +52,7 @@ The reason this Job is being displayed is because a Job (aka a Worker) is part o
 
 A thread is a process. Running `rails s` is an example of a process. Running `rails c` is another example of a process. Being able to run more than 1 thread with an app is what Sidekiq does.
 
-# When is Sidekiq in action?
+### When is Sidekiq in action?
 
 First, some context:
 
@@ -77,7 +77,7 @@ But this isn't about Redis, this is about Sidekiq.
 
 It's nearly impossible to talk about Sidekiq without also mentioning Redis and Jobs.
 
-# Why use Sidekiq (and Redis and Jobs)
+### Why use Sidekiq (and Redis and Jobs)
 
 It's not at all necessary to use Sidekiq in simple apps.
 
@@ -94,7 +94,7 @@ Some examples of things to be done behind the scenes could be:
 
 Imagine a user signs up to a new website but doesn't add all their details. In order to get them to come back to the website tomorrow, it might be a good idea to create a background worker/job to trigger an email reminding them to finish setting up their profile.
 
-# Conclusion
+### Conclusion
 
 Sidekiq is a background jobs framework.
 

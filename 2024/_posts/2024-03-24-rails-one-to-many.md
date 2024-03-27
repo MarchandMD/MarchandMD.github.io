@@ -5,22 +5,22 @@ title: Creating One-to-Many Association in Rails
 ---
 
 
-# Intro
+### Intro
 
 Quick reminder about creating a one-to-many relationship/association.
 
-# What did I already know
+### What did I already know
 
 1. I knew that I needed to put both sides of the relationship into their respective models. The Team model needs `has_many :players`, and the Player model needs `belongs_to :team`.
 2. A migration would be needed; and that there was a way for Rails to automatically write the migration for me.
 
-# What didn't I already know
+### What didn't I already know
 
 1. Both tables need to exist in the schema before creating the association/relationship
 2. Only one side of the relationship needs to be expressed, for it to be bi-directional
 3. There wouldn't be a joins table
 
-# How to make the association/relationship
+### How to make the association/relationship
 
 1. Had to write a migration to add the `Players` table (the `Teams` table already exsited)
 2. Run the migration from #1
@@ -71,7 +71,7 @@ end
 
 Add a reference on the players table, that points to the team table. Do not allow the field to be empty. And it is a foreign key, so never will a player belong to a team that doesn't exist.
 
-# Double check it works
+### Double check it works
 
 After running the migration, drop into the console:
 
@@ -103,10 +103,10 @@ To pass the error:
 
 ```ruby
 Team.create!(name: "home team")
-# Team created
+### Team created
 
 Player.create!(name: "billy", team: Team.last)
-# Player created
+### Player created
 ```
 
 A Player was successfully created, with an association to the Team.
@@ -115,15 +115,15 @@ Let's see the association in action:
 
 ```ruby
 first_player = Player.first
-# player just created
+### player just created
 
 first_player.team.name
-# home team
+### home team
 ```
 
 This proves that the association was successfully created.
 
-# Bonus: dependent: :destroy
+### Bonus: dependent: :destroy
 
 Since these two models are related, it's a good idea to destroy all the MANY items when the ONE item is destroyed.
 

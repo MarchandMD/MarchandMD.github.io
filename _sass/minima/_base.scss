@@ -1,7 +1,6 @@
 /**
  * Reset some basic elements
  */
-body,
 h1,
 h2,
 h3,
@@ -17,7 +16,7 @@ dd,
 ol,
 ul,
 figure {
-  margin: 0;
+  margin: 1rem;
   padding: 0;
 }
 
@@ -229,4 +228,3 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
-

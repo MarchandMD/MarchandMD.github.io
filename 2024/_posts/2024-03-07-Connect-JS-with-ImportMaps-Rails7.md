@@ -7,7 +7,7 @@ There was a disconnect between the [documentation](https://guides.rubyonrails.or
 
 So I'm writing this article.
 
-# Intro
+### Intro
 
 This article assumes a couple of things:
 
@@ -160,7 +160,7 @@ At this point, the only thing left to do is to re-start the server.
 
 in the Vanilla JS file, you can start writing `document.querySelector` statements, defining variables, and construction animations.
 
-# Conclusion
+### Conclusion
 
 I hope this was helpful and fills in some of the gaps that Rails documentation and StackOverflow articles miss.
 

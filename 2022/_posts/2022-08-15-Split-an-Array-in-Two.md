@@ -20,9 +20,9 @@ Starting simple, `arr` has 8 integers
 
 ```ruby
 arr_b = arr_a[0...arr_a.length/2]
-# [1, 2, 3, 4]
+### [1, 2, 3, 4]
 arr_c = arr_a[arr.a_length/2..-1]
-# [5, 6, 7, 8]
+### [5, 6, 7, 8]
 ```
 
 Simple enough, right?
@@ -44,7 +44,7 @@ Remember that a range typically is written like this:
 ```ruby
 
 (0..10)
-# 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+### 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 ```
 The above example is considered an inclusive range. It _includes_ the last number. That's what happens when only 2 dots are used.
 
@@ -52,7 +52,7 @@ And the other type?
 
 ```ruby
 (0...10)
-# 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+### 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 ```
 
 The above example is considered an exclusive range. It _excludes_ the last number. That's what happens when 3 dots are used.

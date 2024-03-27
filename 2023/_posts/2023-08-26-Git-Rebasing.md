@@ -4,19 +4,7 @@ layout: post
 tags: git github
 ---
 
-<details>
-<summary>Table of Contents</summary>
-<ul>
-  
-</ul>
-[Learning How Git Rebase works](#learning-how-git-rebase-works)
-[When to Rebase](#when-to-rebase)
-[What's Happening](#whats-happening)
-[A New Mental Model](#a-new-mental-model)
-[Conclusion](#conclusion)
-</details>
-
-# Learning How Git Rebase works
+### Learning How Git Rebase works
 
 Git is a massive tool.
 
@@ -36,7 +24,7 @@ Generally, this is how I usually use git:
 
 This article will modify the above steps to illustrate one way to use `git rebase`.
 
-# When to rebase
+### When to rebase
 
 Since there's already a flow of steps listed above, the question is: what part of this flow would be replaced by `git rebase`?
 
@@ -57,7 +45,7 @@ The remaining steps look like this:
 - switch back to the feature branch `git checkout <name of branch you've been working on>`
 - `git rebase main`
 
-# What's happening
+### What's happening
 
 By switching back to the local `main` branch and running `git pull`, the local copy of `origin/main` is updated/fast-forwarded to be a reflection of the remote repository.
 
@@ -73,7 +61,7 @@ If the new branch you've been working on had 1 commit, the `rebase` command will
 
 If the new branch has 10 commits, the `rebase` command will rewrite 10 commits to the front of the commit history on `main`.
 
-# A new mental model
+### A new mental model
 
 I often think of it as a big line waiting for a roller coaster.
 
@@ -85,11 +73,11 @@ In this mental model, the people who 'cut' in line are like the new commits you'
 
 Running `git rebase main` is what moves them from one random place to the front of the line.
 
-# How often
+### How often
 
 If the new feature branch has _never_ been pushed to the remote repository, there is no limit to the amount of times it can be rebased.
 
-# When to NOT rebase
+### When to NOT rebase
 
 Theoretically, right now, to be safe, if you've ever sent a PR request from a feature branch DO NOT rebase.
 
@@ -101,7 +89,7 @@ Also, don't use old branches. Or if you do, don't rebase them, and don't submit 
 
 This part of your process maybe different, but this is one simply way to avoid confusion.
 
-# Conclusion
+### Conclusion
 
 Rebasing doesn't have to be scary. It requires some discipline with branches, but don't let that be fear inducing.
 

@@ -30,10 +30,9 @@ nav {
 }
 
 code.language-plaintext {
-  font-size: 1em;
   color: white;
   background-color: #272822;
-  padding: 2px 10px;
+  padding: 0 10px;
   border-radius: 3px;
 }
 
@@ -83,4 +82,8 @@ pre code {
   .badges {
     padding: 20px;
   }
+}
+
+div.highlight {
+  margin: 1rem;
 }

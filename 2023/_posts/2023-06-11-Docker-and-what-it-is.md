@@ -4,18 +4,18 @@ published: true
 tags: docker
 ---
 
-# Docker; My introduction to it
+### Docker; My introduction to it
 
-|ToC|
-|---|
-|[Introduction](#introduction)|
-|[More than just one thing](#more-than-just-one-thing)|
-|[How I'll probably most frequently use Docker](#how-ill-probably-most-frequently-use-docker)|
-|[Another use of Docker](#another-use-of-docker)|
-|[What I know about Docker so far](#what-i-know-about-docker-so-far)|
-|[Conclusion](#conclusion)|
+| ToC                                                                                          |
+| -------------------------------------------------------------------------------------------- |
+| [Introduction](#introduction)                                                                |
+| [More than just one thing](#more-than-just-one-thing)                                        |
+| [How I'll probably most frequently use Docker](#how-ill-probably-most-frequently-use-docker) |
+| [Another use of Docker](#another-use-of-docker)                                              |
+| [What I know about Docker so far](#what-i-know-about-docker-so-far)                          |
+| [Conclusion](#conclusion)                                                                    |
 
-# Introduction
+### Introduction
 
 Docker often comes up in daily life. Whether I see it in job descriptions, or I see it mentioned in conversations, or whether I see articles about it, it's another piece of technology that seems to have grown into the cultural zeitgeist for developers.
 
@@ -23,7 +23,7 @@ So now that it's part of the eco-system, I need to know what it is and how to us
 
 So let's start....
 
-# More than just one thing
+### More than just one thing
 
 Docker is more than just one thing, but it's talked about kind of like 'Git' is talked about. So let's start from a high level and then look at different parts of it.
 
@@ -37,7 +37,7 @@ Docker is more than just one thing, but it's talked about kind of like 'Git' is 
 
 5. Docker Desktop is a thing too; That's like a GUI interface for things related to Docker
 
-# How I'll probably most frequently use Docker
+### How I'll probably most frequently use Docker
 
 Not sure, but here's my best guess:
 
@@ -48,7 +48,7 @@ Not sure, but here's my best guess:
 
 At this point, I'm pretty sure I'd have access to most things I'd need to be able to do in the terminal, within the project. I can still use the commandline once the project is up and running, but the commands in the commandline would be executed _within the context of the containerized application._ Not sure if that makes any sense, but that's how I'm thinking about it.
 
-# Another use of Docker
+### Another use of Docker
 
 The "thing" of Docker seems to be an image. And it's this image that builds the temporary container.
 
@@ -60,7 +60,7 @@ This way I'd be able to include instructions in a README about how to run the ap
 
 So the other use of Docker is to build an image. But that's not really using Docker, so much as building something using the technology of Docker. Which makes this very much a honeypot technology. And here i'm using the term "honeypot" to mean something that is interesting and entertaining, though not a foundational skill.
 
-# What I know about Docker so far
+### What I know about Docker so far
 
 This is more of a brain dump, than it is an exhaustive list
 
@@ -70,6 +70,6 @@ This is more of a brain dump, than it is an exhaustive list
 4. I think installing Docker Desktop on my local machine gave me access to the `docker` commands in terminal
 5. I was able to launch an open source project using Docker, and I was able to access it's development environment in my browser, so that's a win
 
-# Conclusion
+### Conclusion
 
 It's not so scary, once it's been grasped at a certain level. Next comes the repetitions of using it more often, and doing more than just building temporary containers...such as building an image.

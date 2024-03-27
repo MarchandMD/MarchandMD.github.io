@@ -14,7 +14,7 @@ To start, need to set up the method:
 
 ```ruby
 def fib_rec(input, n = 0, solution = [])
-# code goes here
+ code_here
 end
 ```
 

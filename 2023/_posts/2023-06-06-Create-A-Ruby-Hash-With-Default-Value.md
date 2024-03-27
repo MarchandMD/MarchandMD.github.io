@@ -2,74 +2,60 @@
 layout: post
 published: true
 tags: ruby
+title: Count items in a Array; Tabulate in a Hash
 ---
-|section|
-|-------|
-|[Introduction](#introduction)|
-|[Requirements](#requirements)|
-|[The Objective](#the-objective)|
-|[How To](#how-to)|
-|[Notes](#notes)|
+| section                       |
+| ----------------------------- |
+| [Introduction](#introduction) |
+| [How To](#how-to)             |
+| [Notes](#notes)               |
 
 
-# Introduction
-
-There's this really great way to tabulate elements of an array in Ruby that I like, but I often forget exactly how to do it.
-
-This is a quick reference for myself so I can quickly find what I need when trying to use this method.
-
-# Requirements
-
-Really, the only thing that's needed is an array element.
-
-# The objective
-
-I have an Array. What I want is a Hash that tabulates the elements of that Array.
-
-So I'm starting with an Array, but I want a Hash that has unique keys from the elements of that Array. The values should be he number of times the element occurs in the Array.
-
-Visual example of what I'm looking for:
+#### Introduction
+Assume I have an array:
 
 ```ruby
-# what I'm starting with
-
-array = ['m', 'o', 'n', 'o', 'p', 'o', 'l', 'y']
+my_array = ['apple', 'banana', 'orange', 'apple', 'pear', 'apple', 'orange']
 ```
 
-```ruby
-# what i want to achieve
+and I want to count the elements of each:
 
-hash = {
-  'm' => 1,
-  'o' => 3,
-  'n' => 1,
-  'p' => 1,
-  'l' => 1,
-  'y' => 1
+```ruby
+### my_array, turned into a hash
+
+my_hash = {
+  'apple': 3,
+  'banana': 1,
+  'orange': 2,
+  'pear': 1
 }
 ```
 
-# How To
+How can this be done quickly?
 
-First: need to create a Hash with a default value:
+#### How To
+
+First, create a Hash with a default value:
 
 ```ruby
 new_hash = Hash.new { |h,k| h[k] = 0 }
-# => {}
+### => {}
 ```
+
+The default value of the hash is the block passed to `Hash.new`
 
 What this does is gives me a new Hash object that will accept keys. If I pass a key without any explicit value, like this:
 
 ```ruby
 new_hash['x']
-# => 0
+### => 0
 ```
 
 The result will be:
 
 ```ruby
 new_hash = {
-  'x' = 0
+'x' = 0
 }
 ```
 
@@ -81,7 +67,7 @@ Second:
 array = ['m', 'o', 'n', 'o', 'p', 'o', 'l', 'y']
 
 array.group_by do |x|
-  new_hash[x] += 1
+new_hash[x] += 1
 end
 ```
 
@@ -89,7 +75,7 @@ This will then do the iteration through the elements of the `array` and it will 
 
 Next time I call `new_hash`, i'll get the Hash I'm looking for.
 
-# Notes
+### Notes
 
 1. This article started as a way to use `group_by`, but I quickly realized that the `group_by` method wasn't doing anything that `each` didn't do.
 

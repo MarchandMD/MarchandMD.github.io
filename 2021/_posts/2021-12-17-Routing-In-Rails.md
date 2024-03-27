@@ -13,7 +13,7 @@ Being able to visualize the HTTP request/response cycle in a novel way is often 
 
 The rest of this article will be a glimpse into my mind: how I think about the HTTP request/response cycle within a Rails App.
 
-# What exactly is in an HTTP request, anyway?
+### What exactly is in an HTTP request, anyway?
 
 For the sake of simplicity, I'm going to assume the perspective of a single user at a single computer. However, HTTP requests can be made in other ways, by other machines.
 
@@ -23,7 +23,7 @@ In my example, it comes from a browser ( so Chrome, Firefox, Safari etc). Type s
 
 Ignoring the content of what's actually in an HTTP request, let's pretend we've arrived at the web address typed by the user in their browser. And let's also pretend the address just happens to be Rails application! Let's keep watching the request....
 
-# Using Visualization
+### Using Visualization
 
 I assume an HTTP request arrives at my Rails app similar to how people arrive at the front door of my house.
 
@@ -31,7 +31,7 @@ I assume an HTTP request arrives at my Rails app similar to how people arrive at
 
 The "front door" of a Rails app is the `routes.rb` file. Or more specifically `/config/routes.rb`. That's considered the front door because in that file is (potentially) every possible type of HTTP request that could arrive, including instructions about where to go next, and what to do next.
 
-# a quick example
+### a quick example
 Assume the original website was `www.vintageracecars.com/photos/`, then the part Rails is most interested in is the `/photos/` part.
 
 Now let's take a look at our pretend `routes.rb` file:
@@ -46,7 +46,7 @@ What this is saying is: "When a `get` request for `/photos` shows up at the fron
 
 Then do the stuff in `index`.
 
-# Moving From the Front Door to In the App
+### Moving From the Front Door to In the App
 
 The HTTP request has now moved from the `/config/routes.rb` file to the `app/controllers/photos_controller.rb`.
 
