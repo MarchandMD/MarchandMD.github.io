@@ -21,8 +21,25 @@ I've only ever used RSpec, so this would be added to the `spec/spec_helper`: `re
 
 If a test file is setup to make an API call, now would be a good time to run the test suite.
 
-At this point, there's most likely a big error titled something like: `WebMock::NetConnectNotAllowedError:` with additional langauge provided , like "Real HTTP connections are disabled".
+At this point, there's most likely a big error titled something like this:
 
+```bash
+ WebMock::NetConnectNotAllowedError:
+       Real HTTP connections are disabled. Unregistered request: GET https://api.nhle.com/stats/rest/en/team with headers {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent'=>'Ruby'}
+
+       You can stub this request with the following snippet:
+
+       stub_request(:get, "https://api.nhle.com/stats/rest/en/team").
+         with(
+           headers: {
+          'Accept'=>'*/*',
+          'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+          'User-Agent'=>'Ruby'
+           }).
+         to_return(status: 200, body: "", headers: {})
+
+       ============================================================
+```
 This means Webmock is in place and is blocking the test suite from making API calls. Good.
 
 ### Stub the API requests: Basic

@@ -2,25 +2,22 @@
 published: true
 layout: post
 tags: git github
+title: Using Git Rebase
 ---
 
-### Learning How Git Rebase works
-
-Git is a massive tool.
-
-Generally, this is how I usually use git:
+This is how I usually use Git when developing on a project on Github
 
 1. I start on the `main` branch on my local machine
 2. Create a new branch
 3. Do some work
 4. git add
 5. git commit -m 'some commit message'
-6. Repeat steps 3 through 5
-7. git pull origin main when I'm ready to push to the remote repository
+6. Repeat steps 3 through 5, as necessary
+7. `git pull origin main` when I'm ready to push to the remote repository
 8. I then resolve any merge conflicts
 9. repeat steps 4 and 5, if necessary, then skip to step 10
 10. push changes to the remote repository on Github
-11. Open a Pull Request on/in the remote repository
+11. Open a Pull Request
 
 This article will modify the above steps to illustrate one way to use `git rebase`.
 
@@ -31,10 +28,10 @@ Since there's already a flow of steps listed above, the question is: what part o
 To illustrate, here are the steps that would remain:
 
 - Start on the `main` branch on my local machine (with an existing remote repo connected)
-- Decide to do some work, so create a new branch with `git checkout -b <name of new branch>`
+- Create a new branch with `git checkout -b <name of new branch>`
 - Do some work on the new branch
-- git add
-- git commit -m 'some commit message'
+- Git add
+- Git commit -m 'some commit message'
 
 This is where the workflow deviates to properly use `git rebase`.
 
@@ -49,12 +46,12 @@ The remaining steps look like this:
 
 By switching back to the local `main` branch and running `git pull`, the local copy of `origin/main` is updated/fast-forwarded to be a reflection of the remote repository.
 
-Next, switching back to the new branch that's been the focus of the most recent local work you've been doing, you're ready to rebase.
+Next, switching back to the new branch brings the recent work into focus
 
 Running `git rebase main` does the following things:
 
 - lines up all the commits on the `main` branch
-- looks at all the commits on the `new branch you've been working on`
+- looks at all the commits on the new branch
 - creates new commits to the front of the line of existing commits on `main` branch
 
 If the new branch you've been working on had 1 commit, the `rebase` command will rewrite one commit to the front of the commit history on `main`.
