@@ -40,7 +40,26 @@ This would create the following HTML
 </div>
 ```
 
-There's some other nuance to it.
+# Customizing the id
+
+Perhaps the value of the id would be more descriptive with some customization.
+
+Pass a second argument as either a symbol or a string, and that word will be prepended onto the id.
+
+```erb
+<div id="<%= dom_id(@post, "edit") %>">
+  # some cool content
+</div>
+```
+
+This will create the following HTML
+
+```html
+<div id="edit_post_123">
+  # some cool content
+</div>
+```
+# Summary
 
 For now, this is all I need to understand this concept of the `dom_id` helper method.
 
