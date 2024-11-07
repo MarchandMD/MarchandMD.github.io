@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="container row">
-  <div class="col-3">
+  <div class="col-sm-12 col-md-3">
     <strong>Years</strong>
     <ul class="">
       {% for category in site.categories %}
@@ -18,11 +18,12 @@ layout: default
     <ul class="">
       {% for tag in site.tags %}
       <li>
-        <a href={% link topics.md %}#{{ tag[0] }} class="">
+        <a href="{{ '/topics'}}" class="">
           {{ tag[0] }}
         </a>
       </li>
       {% endfor %}
+
     </ul>
   </div>
   <div class="col-8">

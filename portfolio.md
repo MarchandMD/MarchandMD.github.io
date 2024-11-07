@@ -1,5 +1,5 @@
 ---
-layout: project_page
+layout: portfolio_layout
 title: Portfolio
 permalink: /portfolio/
 ---
