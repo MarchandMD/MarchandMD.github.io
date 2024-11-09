@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+
+<article class="post">
+  <header class="post-header text-center">
+    <h1 class="post-title text-center">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+    <ul class="post-list">
+      {% if page.title == "Code Challenges" %} {% for item in
+            site.code_challenges %}
+      <a href="{{item.url}}">
+        <li>
+          <h3>{{ item.title }}</h3>
+        </li>
+      </a>
+      {% endfor %} {% endif %}
+    </ul>
+  </div>
+</article>

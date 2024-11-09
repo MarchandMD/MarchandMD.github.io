@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Basic Devise setup in Rails 7 (no OmniAuth of any type)
-tags: Rails devise gems authentication users
+tags: rails
 #date: 2021-08-24 16:54:42 -0600
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 published: false
 title: "GraphQL - working with Types and objects"
-tags: GraphQL apis ruby rails
+tags: graphQL apis ruby rails
 ---
 
 | table of contents                |

@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: Creating a Controller, an Action and a Root path in a Rails 7 app
-tags: rails controllers actions routes
+tags: rails
 date: 2023-12-22 16:54:42 -0600
 ---
 

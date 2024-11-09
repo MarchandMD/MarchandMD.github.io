@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-tags: NodeJS PostgresQL Express
+tags: nodeJS postgresQL express
 ---
 
 <a name="readme-top"></a>

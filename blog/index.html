@@ -18,7 +18,7 @@ layout: default
     <ul class="">
       {% for tag in site.tags %}
       <li>
-        <a href="{{ '/topics'}}" class="">
+        <a href="{{ '/topics#' | append: tag[0] }}" class="">
           {{ tag[0] }}
         </a>
       </li>

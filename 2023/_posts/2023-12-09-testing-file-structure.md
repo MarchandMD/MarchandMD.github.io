@@ -2,7 +2,7 @@
 layout: post
 title: Turbo Streams are so cool!
 published: true
-tags: turbo turbo-streams rails ruby
+tags: turbo
 ---
 
 <details open>

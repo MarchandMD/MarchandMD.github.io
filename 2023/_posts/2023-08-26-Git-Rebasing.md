@@ -1,13 +1,13 @@
 ---
 published: true
 layout: post
-tags: git github
+tags: git
 ---
 
 <details>
 <summary>Table of Contents</summary>
 <ul>
-  
+
 </ul>
 [Learning How Git Rebase works](#learning-how-git-rebase-works)
 [When to Rebase](#when-to-rebase)

@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true # switch to true when I'm ready to publish this
-title: "Visualize HTTP requests through a Rails App"
+title: "visualize http requests through a rails app"
 tags: rails http ruby
 ---
 

@@ -10,6 +10,15 @@
   position: relative;
 }
 
+h3[id] {
+  scroll-margin-top: 20px !important;
+  margin-top: 20px;
+}
+
+.topics-section {
+  margin-bottom: 20px;
+}
+
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
