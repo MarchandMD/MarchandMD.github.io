@@ -9,3 +9,8 @@ vendor
 assets/images/.DS_Store
 /.vscode
 assets/.DS_Store
+.cursor
+assets/images/ruby-client-generated
+assets/images/ruby-client-generated.zip
+assets/images/ror.jpg
+assets/images/ror.png
