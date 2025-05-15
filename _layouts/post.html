@@ -1,11 +1,9 @@
 ---
 layout: default
 ---
-<div>
-  <div>
-
+<main>
+  <section>
     <article itemscope itemtype="http://schema.org/BlogPosting">
-
       <header>
         <h1 itemprop="name headline">{{ page.title | escape }}</h1>
         <p>
@@ -19,9 +17,9 @@ layout: default
         </p>
       </header>
 
-      <div itemprop="articleBody">
+      <section itemprop="articleBody">
         {{ content }}
-      </div>
+      </section>
 
       {%- if site.disqus.shortname -%}
       {%- include disqus_comments.html -%}
@@ -29,6 +27,5 @@ layout: default
 
       <a href="{{ page.url | relative_url }}" hidden></a>
     </article>
-
-  </div>
-</div>
+  </section>
+</main>
