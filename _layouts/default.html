@@ -3,19 +3,19 @@
 
   {%- include head.html -%}
 
-  <body class="container">
-    <div class="row" id="header-row">
+  <body>
+    <div>
       {%- include header.html -%}
     </div>
-    <div class="row" id="nav-bar-row">
+    <div>
       {%- include navbar.html -%}
     </div>
-    <div class="row flex-grow-1" id="main-content-row">
-      <main class="" aria-label="Content">
+    <div>
+      <main aria-label="Content">
         {{ content }}
       </main>
     </div>
-    <div class="row align-items-center" id="footer-row">
+    <div>
       {% include footer.html %}
     </div>
   </body>
