@@ -4,20 +4,18 @@
   {%- include head.html -%}
 
   <body>
-    <div>
+    <header>
       {%- include header.html -%}
-    </div>
-    <div>
+    </header>
+    <nav>
       {%- include navbar.html -%}
-    </div>
-    <div>
-      <main aria-label="Content">
-        {{ content }}
-      </main>
-    </div>
-    <div>
+    </nav>
+    <main aria-label="Content">
+      {{ content }}
+    </main>
+    <footer>
       {% include footer.html %}
-    </div>
+    </footer>
   </body>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
