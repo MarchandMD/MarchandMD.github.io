@@ -62,3 +62,7 @@ sass:
   load_paths:
   - _sass
   - /Users/michaelmarchand/.rbenv/versions/2.7.4/lib/ruby/gems/2.7.0
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
