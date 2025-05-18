@@ -1,7 +1,8 @@
 ---
 layout: post
 published: false
-tags: ruby gems rails
+title: "Creating a Service in Rails"
+tags: ruby rails services architecture patterns development design
 ---
 
 ## Setup

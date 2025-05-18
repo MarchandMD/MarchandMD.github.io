@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "Split an Array in Two"
 published: true
-tags: ruby arrays
+tags: ruby arrays methods programming development algorithms
 ---
 
 ## One way to split an array in to two separate Arrays

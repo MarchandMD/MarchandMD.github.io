@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "Select Method in Ruby"
 published: true
-tags: ruby methods
+tags: ruby methods enumerable development programming
 ---
 
 ### Intro

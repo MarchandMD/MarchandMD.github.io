@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "Using the Faraday Gem"
 published: true
-tags: gems ruby rails
+tags: ruby rails gems api http networking development
 ---
 
 ## Introduction

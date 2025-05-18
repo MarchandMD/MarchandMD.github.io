@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "Flash Messages in Rails"
 published: false
-tags: ruby rails flash-messages
+tags: ruby rails frontend development
 ---
 
 ## What is a Flash Message?

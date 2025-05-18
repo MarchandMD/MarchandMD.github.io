@@ -1,6 +1,8 @@
 ---
 layout: post
+title: "How Rails Populates Links"
 published: false
+tags: ruby rails routing mvc
 ---
 
 ## Intro

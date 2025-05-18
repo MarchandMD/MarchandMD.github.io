@@ -2,7 +2,7 @@
 layout: post
 published: true
 title:  "How to install and configure factory_bot_rails"
-tags: gems ruby rails
+tags: ruby rails testing factorybot rspec development tdd
 ---
 
 ## Using `factory_bot_rails`

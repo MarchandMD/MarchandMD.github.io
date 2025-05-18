@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+title: "The Importance of Floating"
 tags: ruby math
 ---
 

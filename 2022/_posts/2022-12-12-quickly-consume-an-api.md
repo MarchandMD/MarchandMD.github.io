@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+title: "Quickly Consume an API"
 tags: turing_school rails ruby figaro
 ---
 

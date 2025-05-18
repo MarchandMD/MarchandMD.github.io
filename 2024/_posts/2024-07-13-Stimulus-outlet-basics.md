@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-tags: rails, stimulus
+tags: rails stimulus
 title: Basics of Stimulus Outlets in Rails 7
 ---
 

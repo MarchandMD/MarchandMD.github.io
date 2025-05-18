@@ -1,8 +1,8 @@
 ---
 layout: post
+title: "Setting Up and Using VCR Gem"
 published: true
-title: "Setting up and using VCR gem"
-tags: gems ruby rails rspec apis
+tags: ruby rails testing vcr mocking api development tdd
 ---
 
 1. `bundle add vcr -g 'test, development'`

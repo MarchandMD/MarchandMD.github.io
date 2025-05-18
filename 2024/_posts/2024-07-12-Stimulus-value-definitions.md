@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-tags: rails, stimulus
+tags: rails stimulus
 title: Where to add the value attribute for Stimulus
 ---
 

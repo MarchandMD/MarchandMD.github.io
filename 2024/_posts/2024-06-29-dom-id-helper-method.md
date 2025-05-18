@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-tags: rails, helpers
+tags: rails helpers
 title: Using the dom_id helper method
 ---
 

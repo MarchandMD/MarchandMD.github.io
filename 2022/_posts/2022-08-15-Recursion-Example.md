@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "Recursion Example"
 published: false
-tags: ruby recursion
+tags: ruby algorithms recursion programming development computer-science
 ---
 
 ## Setting it Up

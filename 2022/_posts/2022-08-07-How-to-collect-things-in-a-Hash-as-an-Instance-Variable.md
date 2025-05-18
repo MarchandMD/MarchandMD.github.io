@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "How to Collect Things in a Hash as an Instance Variable"
 published: true
-tags: ruby hashes
+tags: ruby rails hash collections programming development
 ---
 
 ### How to collect things in a Hash, as an instance variable of an Object

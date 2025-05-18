@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "Rails Forms"
 published: true
-tags: rails forms ruby
+tags: ruby rails forms html frontend development mvc
 ---
 
 ### How to build forms in Rails

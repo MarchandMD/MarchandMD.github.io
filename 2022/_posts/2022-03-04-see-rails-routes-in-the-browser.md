@@ -1,7 +1,8 @@
 ---
 layout: post
 published: true
-tags: ruby rails routing http
+title: "See Rails Routes in the Browser"
+tags: ruby rails routing http debugging development
 ---
 
 | section                                                         |
