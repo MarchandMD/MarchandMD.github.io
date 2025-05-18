@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="../assets/css/mystyle.css">
 <p>
 <nav aria-label="Blog pagination">
   <div>
@@ -9,7 +10,7 @@ layout: default
     {% else %}
       <span>Previous</span>
     {% endif %}
-    
+
     {% if paginator.next_page and paginator.page < paginator.total_pages %}
       <a href="{{ paginator.next_page_path }}">Next</a>
     {% else %}
@@ -49,7 +50,7 @@ layout: default
       {% else %}
         <span>Previous</span>
       {% endif %}
-      
+
       {% if paginator.next_page and paginator.page < paginator.total_pages %}
         <a href="{{ paginator.next_page_path }}">Next</a>
       {% else %}
