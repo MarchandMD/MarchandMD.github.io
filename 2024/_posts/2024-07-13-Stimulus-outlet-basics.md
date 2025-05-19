@@ -5,59 +5,59 @@ tags: rails stimulus
 title: Basics of Stimulus Outlets in Rails 7
 ---
 
-It is possible for a Stimulus Controller to have values, targets and outlets.
-
-If you have 2 (or more) separate Stimulus controllers on the same page, it is possible for controller A to see all the values and targets of controller B, _from within controller A_.
-
-It is assumed that there is no turbo frame being loaded, and that all controllers, values, and targets are visible on the page.
-
-Add a data-controller for controller A in a view
+Pretend a `div` now has a `data-controller` attribute, like this:
 
 ```html
-<div data-controller="controller-a">
-  ....
-</div>
+<div data-controller="controller-a"># code here</div>
 ```
 
-Now add a controller B in the same view
+If there are 2 (or more) separate Stimulus controllers on the same page, it is possible for controller A to "see" everything in controller B, **from within the Stimulus controller for A.**
+
+_\* It is assumed that there is no turbo frame being loaded, and that all controllers, values, and targets are visible on the page._
+
+With controller A in a view
 
 ```html
-<div data-contoller="controller-a">
-  ....
-</div>
-
-<div data-controller="controller-b">
-  ...
-</div>
+<div data-controller="controller-a"># code here</div>
 ```
 
-Now take the first step to _look into controller B_ from controller A, by creating an "outlet attribute" on controller-A.
+and now controller B in the same view
 
 ```html
+<div data-controller="controller-a"># code here</div>
+
+<div data-controller="controller-b"># code here</div>
+```
+
+Now take the first step to _look into controller B_, by creating an "outlet attribute" on controller-A.
+
+```html
+// the second attribute; pattern is
+data-nameOfThisController-nameOfOtherController-outlet
+
 <div data-controller="controller-a" data-controller-a-controller-b-outlet="">
-  ...
+  # code here
 </div>
 
-<div data-controller="controller-b">
-  ...
-</div>
+<div data-controller="controller-b"># code here</div>
 ```
 
-The value for "data-controller-a-controller-b-outlet" needs to be a css selector that's on the same element that defines "controller-b", so add an id to the "controller-b" element
+The value of "data-controller-a-controller-b-outlet" needs to be a css selector. Like a class or an id, that's on the same element that defines "controller-b".
 
+Add an id to the "controller-b" element...
 
 ```html
-<div data-controller="controller-a" data-controller-a-controller-b-outlet="#an-outlet">
-  ...
+<div
+  data-controller="controller-a"
+  data-controller-a-controller-b-outlet="#an-outlet"
+>
+  # code here
 </div>
 
-<div id="an-outlet" data-controller="controller-b">
-  ...
-</div>
+<div id="an-outlet" data-controller="controller-b"># code here</div>
 ```
 
 Now in the controller-a Javascript Stimulus controller, make a reference to the outlet, the same way values and targets are referenced:
-
 
 ```js
 // controller-a
