@@ -6,4 +6,19 @@ body {
 #nav-links {
   display: flex;
   justify-content: space-between;
+  padding-top: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+// Specific size for technology icons in README
+.tech-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5rem;
 }
