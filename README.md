@@ -34,7 +34,6 @@ Not really sure when I wrote the original paragraph above; but it's now December
 
 # to do
 
--   Code challenge aggregation
 -   API consumption for GH statistics
 -   Additional themes
 -   collapsible navigation
