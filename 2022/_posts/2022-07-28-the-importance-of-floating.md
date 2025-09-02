@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+title: "The Importance of Floating"
 tags: ruby math
 ---
 
@@ -23,7 +24,6 @@ The actual problem at hand included extracting the decimals from a float
 
 ```ruby
 2.23
-# the problem only needed .23 for evaluation
 ```
 
 Naturally, turned to [StackOverflow](https://stackoverflow.com/questions/12406032/get-fraction-part-of-a-decimal-number)

@@ -11,11 +11,11 @@ I forget how to do that often, however, I've learned if I write an article about
 
 Since I've implemented this search bar feature successfully, i'm going to create this article about my process so I can easily reference this when I forget in the future.
 
-# How to
+### How to
 
 A search bar is essentially an HTML form. So I'll be using one of Rails form helpers, either `form_with` or `form_tag`.
 
-# The code
+### The code
 
 The code I've used in the past that was successful looked like this:
 
@@ -39,7 +39,7 @@ Now it's time to explain what this is doing.
 
 That's it.
 
-# What does this do?
+### What does this do?
 
 This creates a form on the view/page to allow a user to type in some text and then hit "Search" button.
 
@@ -47,7 +47,7 @@ At that point, the Rails application will send a request to the "Mountains" cont
 
 At this point i'd need to look at the controller and add some logic for working with/interacting with the database using the data passed in via the form, but that's beyond the scope of this article.
 
-# Conclusion
+### Conclusion
 
 To create a simple search bar use the `form_tag` and point it at the controller of choice by specifying the URL and using the `GET` method.
 

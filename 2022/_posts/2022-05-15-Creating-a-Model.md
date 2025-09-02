@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "Creating a Model"
 published: false
-tags: ruby rails models
+tags: ruby rails activerecord models mvc development
 ---
 
 ## Intro

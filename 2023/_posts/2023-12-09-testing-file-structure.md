@@ -16,7 +16,7 @@ tags: turbo
 </ul>
 </details>
 
-# Setup
+### Setup
 
 To use Turbo streams, do the following:
 
@@ -35,14 +35,14 @@ One way to trigger the HTTP request might be to have a basic form and or a basic
 
 Next stop: a controller action.
 
-# In the controller
+### In the controller
 
 Usually, Rails convention is to render/redirect to a view that's been named the same as the action. Index action will render the index.html.erb view, the show action will render the show view, etc....
 
 If I want to instead use turbo streams, this is how:
 
 ```ruby
-# this would be added at the very end of the controller action (right before the "end" statement)
+### this would be added at the very end of the controller action (right before the "end" statement)
 respond_to do |format|
   format.turbo_stream
 end
@@ -56,7 +56,7 @@ Instead of redirecting or rendering to an entire view, Rails is "responding to" 
 
 So if I'm in the `create` action of a  cars_controller, rails will look for `app/views/cars/create.turbo_stream.erb`.
 
-# in the turbo stream erb file
+### in the turbo stream erb file
 
 First thing to know about this is: it's just a typical HTML/ERB file. Add any logic in ERB tags in this file.
 
@@ -84,13 +84,13 @@ Some basic notes about this is:
 
 That's it. That's the beauty of turbo streams.
 
-# additional stuff
+### additional stuff
 Now it's possible to use more than just #update. and it's possible to conditionally define what will happen to a single turbo_frame upon different circumstances.
 
 One thing that might be neat to try to do is use all of the different turbo stream actions within a given turbo stream file; So the turbo_stream.erb might look like this:
 
 ```erb
-# adding all seven possible turbo stream actions to the same id, from the same file
+### adding all seven possible turbo stream actions to the same id, from the same file
 <%= turbo_stream.append "some_id" do %>
   # code here
 <% end %>
@@ -121,7 +121,7 @@ One thing that might be neat to try to do is use all of the different turbo stre
 
 ```
 
-# Conclusion
+### Conclusion
 The way I think about Turbo Streaming is: the `whatever.turbo_stream.erb` file is kind of like a controller that will "broadcast" (or stream) some HTML back to the view Rails just came from; and more specifically, Rails will take the streamed HTML and update the turbo frame on that page with the HTML that's been sent from `whatever.turbo_stream.erb`.
 
 So cool.

@@ -35,7 +35,7 @@ This page is the default root path.
 
 It is possible to display something besides this page by adding a controller with an action and updating the routes file.
 
-# Generate a Controller with an Index action
+### Generate a Controller with an Index action
 
 Kill the server by typing `ctrl-c` in the command line (the Terminal app)
 
@@ -44,10 +44,10 @@ In a second or two, the server will stop running.
 In the same command line generate a new controller with an index action all at the same time
 
 ```bash
-# g is short for generate
+### g is short for generate
 rails g controller Welcome index
 
-# rails generate controller Welcome index
+### rails generate controller Welcome index
 ```
 
 This creates the following output in the command line (yours may look a little different, buy you'll definitely have at least these):
@@ -63,7 +63,7 @@ This creates the following output in the command line (yours may look a little d
 
 The last thing we need to do to change the default root path is update the routes file.
 
-# Update the routes file
+### Update the routes file
 
 In your app, navigate to `devise-practice-1/config/routes.rb` and open it
 
@@ -79,7 +79,7 @@ Save the file (if you don't already have "auto-save" turned on), and start the s
 
 You will see a different page than the one before.
 
-# Conclusion
+### Conclusion
 
 That's a quick example for creating a new controller, adding an action (index) and updating the routes file to re-direct to a new root path.
 

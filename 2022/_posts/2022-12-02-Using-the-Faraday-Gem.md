@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "Using the Faraday Gem"
 published: true
-tags: gems ruby rails
+tags: ruby rails gems api http networking development
 ---
 
 ## Introduction
@@ -40,7 +41,7 @@ The file is plural, because there will be multiple endpoints accessed...and then
 Add this code:
 
 ```ruby
-# app/services/tmdb_services.rb
+### app/services/tmdb_services.rb
 
 def conn
   Faraday.new(url: "https://api.themoviedb.org") do |faraday|

@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+title: "So Many Steps To Setup The Independent Challenge..."
 tags: turing_school ruby rails
 ---
 

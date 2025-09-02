@@ -1,0 +1,38 @@
+{
+  "rules": {
+    "filePatterns": {
+      "include": [],
+      "exclude": []
+    },
+    "formatting": {
+      "indentSize": 2,
+      "indentStyle": "space"
+    },
+    "linting": {
+      "enabled": true,
+      "rules": {}
+    },
+    "autoComplete": {
+      "enabled": true,
+      "triggers": []
+    },
+    "writingStyle": {
+      "prohibitedTerms": [
+        "I", "me", "my", "mine",
+        "you", "your", "yours",
+        "he", "him", "his",
+        "she", "her", "hers",
+        "we", "us", "our", "ours",
+        "they", "them", "their", "theirs"
+      ],
+      "alternativeConstructions": [
+        "The solution is...",
+        "The next step involves...",
+        "The code demonstrates...",
+        "The documentation shows...",
+        "Results indicate...",
+        "Analysis reveals..."
+      ]
+    }
+  }
+}

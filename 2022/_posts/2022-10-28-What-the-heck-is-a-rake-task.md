@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "What the Heck is a Rake Task"
 published: true
-tags: rails tasks ruby
+tags: ruby rails rake automation tools development cli
 ---
 
 ## Introduction

@@ -11,19 +11,19 @@ tags: graphQL apis ruby rails
 | 2. [types](#types)               |
 | 2. [testing](#testing)           |
 
-# introduction
+### introduction
 
 This article will walk through the process of turning data into a graphQL response.
 
 Specifically, data is going to be grabbed from the NHL Api using traditional ReST conventions, and re-packaged as a graphQL query.
 
-# types
+### types
 
 Let's add a Type.
 
 A type is graphQL's version of a Model Object, or a PORO. A Type does the heavy lifting of behaving both like a serializer and a Model.
 
-# testing
+### testing
 
 In the first article I setup the app to use RSpec. Now the app needs a place to hold all the tests for the graphQL queries (or mutations). From the root of the app in the commandline, run this command:
 

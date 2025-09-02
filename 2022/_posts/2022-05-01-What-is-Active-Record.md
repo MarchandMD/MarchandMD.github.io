@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "What is Active Record"
 published: false
-tags: activeRecord ruby rails models
+tags: ruby rails activerecord database orm mvc development
 ---
 
 I need an English-to-English translation of the official Rails guide. The language and ideas there are too obscure, too convoluted, too "gate-keepy". So i'll try to extrapolate those words into simpler ideas I understand.

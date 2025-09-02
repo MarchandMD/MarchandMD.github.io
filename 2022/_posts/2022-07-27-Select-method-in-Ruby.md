@@ -1,10 +1,11 @@
 ---
 layout: post
+title: "Select Method in Ruby"
 published: true
-tags: ruby methods
+tags: ruby methods enumerable development programming
 ---
 
-# Intro
+### Intro
 
 I'm trying different uses for this blog of mine, to see how I can use it for learning exhaust. Consider this article as an extension of the official documentation.
 
@@ -12,13 +13,13 @@ While being able to read documentation is a skill, _liking_ the vernacular used 
 
 To that end, I'm going to expand on the official documentation here for an individual method, one at a time.
 
-# The `#select` method
+### The `#select` method
 
 One of the more versatile methods, it appears as part of the `ENV`, `IO`, `Enumerator::Lazy`, `Array`, `Enumerable`, `Hash`, `Kernel` and `Struct` objects.
 
 I'll be looking at the `Enumerable` [version](https://ruby-doc.org/core-2.7.2/Enumerable.html#method-i-select) of the `#select` method. Though semantically speaking, it's hard to believe there's a lot of variation between how the objects use it.
 
-# A high-level, 30,000' definition
+### A high-level, 30,000' definition
 
 The documentation for `#select` starts at the end:
 
@@ -28,7 +29,7 @@ When learning Ruby for the first time and reading a definition like this, it was
 
 Or rather, maybe the language was written to make developers happy, but the documentation isn't as bubbly.
 
-# Zooming into the definition with an example
+### Zooming into the definition with an example
 
 Let's take a visual look at the method to reveal some clues and maybe short-circuit our discovery:
 
@@ -52,11 +53,11 @@ The return value here would be:
 [2, 4]
 ```
 
-# Caveats
+### Caveats
 
 If no block is passed, an Enumerator object is returned
 
-# Aliases
+### Aliases
 
 These methods could also be used, instead of `#select`:
 
@@ -65,7 +66,7 @@ These methods could also be used, instead of `#select`:
 -   `reject` (this would be the opposite of filter, depending on what is sought from the original `Enumerable` object)
 -   `grep` (this uses RegEx)
 
-# Conclusion
+### Conclusion
 
 Alright, that's it. `#select` is a versatile, non-destructive way to grab stuff from an existing Enumerable.
 

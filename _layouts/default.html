@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   {%- include head.html -%}
-  {%- include header.html -%}
-  {%- include navbar.html -%}
-  <body class="container">
 
-    <main class="page-content d-flex flex-column justify-content-evenly align-items-center" aria-label="Content">
-
-      {% if page.url != "/" %}
-      <div class="wrapper">
-        {% else %}
-        {% endif %}
-        {{ content }}
-      </div>
+  <body>
+    <header>
+      {%- include header.html -%}
+    </header>
+    <nav>
+      {%- include navbar.html -%}
+    </nav>
+    <main aria-label="Content">
+      {{ content }}
     </main>
-
-    {% include footer.html %}
+    <footer>
+    </footer>
   </body>
 </html>

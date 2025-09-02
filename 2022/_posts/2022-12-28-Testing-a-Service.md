@@ -1,6 +1,7 @@
 ---
 layout: post
 published: false
+title: "Testing a Service"
 tags: rspec rails ruby
 ---
 

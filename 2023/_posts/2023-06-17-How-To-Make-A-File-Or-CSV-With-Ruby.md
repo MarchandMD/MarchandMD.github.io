@@ -4,17 +4,17 @@ published: true
 tags: ruby rails csv
 ---
 
-# How to write to a File or CSV file in Ruby
+### How to write to a File or CSV file in Ruby
 
-|ToC|
-|--|
-|[Introduction](#introduction)|
-|[Create a File](#create-a-file)|
-|[Write to a File](#write-to-a-file)|
-|[Now With CSV](#now-with-csv)|
-|[Conclusion](#conclusion)|
+| ToC                                 |
+| ----------------------------------- |
+| [Introduction](#introduction)       |
+| [Create a File](#create-a-file)     |
+| [Write to a File](#write-to-a-file) |
+| [Now With CSV](#now-with-csv)       |
+| [Conclusion](#conclusion)           |
 
-# Introduction
+### Introduction
 
 Many, many times I've wanted to write a quick and dirty Ruby script that drops some data into a
 file.
@@ -30,7 +30,7 @@ This is that article.
 
 Now I'll be able to reference this article instead of the various sources of documentation.
 
-# Create A File
+### Create A File
 
 First thing to do is to remind myself how to create a file in the Ruby script I'm writing.
 
@@ -56,7 +56,7 @@ new_file = File.open('new_file.txt', 'w')
 It's probably possible to create different file types simply by adding a different extension to the
 file name in the first argument. I'll do that in a bit when I start exploring CSVs.
 
-# Write to a File
+### Write to a File
 
 Once the `new_file` exists, I can then write to it like this:
 
@@ -65,7 +65,7 @@ new_file.write('hello world')
 ```
 And that'll automatically populate the file.
 
-# Now with CSV
+### Now with CSV
 
 I'll have to `require 'csv'` at the top of the file.
 
@@ -97,7 +97,7 @@ Next, I want to populate the CSV file with more data.
 the best thing would be to have data in an Array, so i can simply use the shovel operator again ( the
 shovel operator is this: `<<`)
 
-# Conclusion
+### Conclusion
 
 There's a lot more that can be done with both `File` and `CSV`, but this is the quickest way to get
 something onto a file, without having to dig through other documentation.

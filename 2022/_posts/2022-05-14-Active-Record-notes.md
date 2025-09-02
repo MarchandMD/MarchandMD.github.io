@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "Active Record Notes"
 published: false
-tags: activeRecord ruby rails models
+tags: ruby rails activerecord database orm mvc development
 ---
 
 ## Intro

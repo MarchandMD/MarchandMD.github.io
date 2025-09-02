@@ -1,10 +1,11 @@
 ---
 layout: post
+title: "How to Collect Things in a Hash as an Instance Variable"
 published: true
-tags: ruby hashes
+tags: ruby rails hash collections programming development
 ---
 
-# How to collect things in a Hash, as an instance variable of an Object
+### How to collect things in a Hash, as an instance variable of an Object
 
 Objects have state and behavior.
 
@@ -22,18 +23,18 @@ That instance variable will be an Empty Hash object.
 
 This will allow for the demonstration of how to collect things in a Hash, as an instance variable.
 
-# Setting up the code
+### Setting up the code
 
 ```ruby
 class Restaurant
   attr_accessor :orders
 
-# the LESS CORRECT way
+### the LESS CORRECT way
   def initialize
     @orders = {}
   end
 
-# the MORE CORRECT way
+### the MORE CORRECT way
   def initialize
     @orders = Hash.new { |hash, key| hash[key] = [] }
   end
@@ -73,7 +74,7 @@ So now the `@orders` Hash has a single key of "ham", with a single value of an e
 
 This can be verified by calling `@orders.keys` or `@orders.values`
 
-# How to add a value to the new key, at the same time
+### How to add a value to the new key, at the same time
 
 Calling `restaurant.orders['ham']` would result in an empty Array being displayed. Assigning a value is a little less than obvious as well.
 
@@ -93,14 +94,14 @@ Ultimately what would be created is an Array associated to the ['ham'] key popul
 
 @orders['veggie'] << "customer 3"
 
-# @orders now looks like:
+### @orders now looks like:
 @orders = {
   'ham' => ["customer 1", "customer 2"],
   'veggie' => ["customer 3"]
 }
 ```
 
-# conclusion
+### conclusion
 
 This article doesn't discuss the difference between the less correct way, and the more correct way. This article illustrates how to collect things in a Hash that's been assigned to an instance variable.
 

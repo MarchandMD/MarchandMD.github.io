@@ -2,7 +2,7 @@
 layout: post
 published: true
 title:  "How to install and configure factory_bot_rails"
-tags: gems ruby rails
+tags: ruby rails testing factorybot rspec development tdd
 ---
 
 ## Using `factory_bot_rails`
@@ -133,7 +133,7 @@ There's a way to make lots of things all at once, using `create_list`:
 ```ruby
 it 'has a lot of things' do
 many_books = create_list(:book, 10)
-# cool code skipped here
+### cool code skipped here
 end
 ```
 This'll make 10 books.

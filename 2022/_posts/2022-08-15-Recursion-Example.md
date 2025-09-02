@@ -1,7 +1,8 @@
 ---
 layout: post
+title: "Recursion Example"
 published: false
-tags: ruby recursion
+tags: ruby algorithms recursion programming development computer-science
 ---
 
 ## Setting it Up
@@ -14,7 +15,7 @@ To start, need to set up the method:
 
 ```ruby
 def fib_rec(input, n = 0, solution = [])
-# code goes here
+ code_here
 end
 ```
 

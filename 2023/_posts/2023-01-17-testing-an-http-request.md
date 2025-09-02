@@ -5,7 +5,7 @@ title:  "Testing an HTTP request in Rails with RSpec"
 tags: testing rspec http api rails ruby
 ---
 
-# Givens
+### Givens
 
 Just like in high school algebra, approaching any problem/challenge requires knowing where you're starting from, what you already know, and what the goal is. Below is a list of things that are given, or assumed, prior to being comfortable with the rest of the article.
 
@@ -15,7 +15,7 @@ Just like in high school algebra, approaching any problem/challenge requires kno
 * You're using RSpec to test and have run `rails g rspec:install`
 * You're familiar with namespacing in the routes file
 
-# Setting things up
+### Setting things up
 
 Now that we're on the same page, let's begin.
 
@@ -41,7 +41,7 @@ We are now setup to test this API endpoint.
 
 A quick note about what this means, at a high level: I'm imagining as though my app is receiving an HTTP request. So someone else somewhere in the world is going to initiate an HTTP request from their browser (Chrome, Firefox, whatever) and that HTTP request is coming to my app. Cool.
 
-# Testing the Request: step 1 - add the route
+### Testing the Request: step 1 - add the route
 
 I've received instructions about what endpoint i'm to be testing. Those instructions say something to the effect of:
 
@@ -56,7 +56,7 @@ It looks like a file path. Or a route. But it's an HTTP request. Which is kind o
 Anytime something from outside the application (and even inside the application) comes to  the application, it first arrives at the routes file. I typically think of things from this perspective often. A new request starts at the `/app/config/routes.rb` file. So let's go there.
 
 ```ruby
-# /app/config/routes.rb
+### /app/config/routes.rb
 
 namespace :api do
   namespace :v1 do
@@ -76,7 +76,7 @@ If you didn't read the comment, the line `get '/recipes', to: 'recipes#index'` t
 So now that's done, let's close `routes.rb` and it's time to add code to the test file.
 
 ```ruby
-# we are in this file: /spec/requests/get_a_countries_recipes_spec.rb
+### we are in this file: /spec/requests/get_a_countries_recipes_spec.rb
 
 require 'rails_helper'
 
@@ -119,7 +119,7 @@ I see "uninitialized constant Api" twice; I also see "ActionController::RoutingE
 
 This error was expected. RSpec is alerting me that there is no route to something called API. Let's fix that.
 
-# Creating the controller
+### Creating the controller
 
 When building an API not a lot is different, aside from the organization of things.
 
@@ -136,7 +136,7 @@ Perfect.
 So now, let's add the typical Rails code here in this file:
 
 ```ruby
-# /app/controllers/api/v1/recipes_controller.rb
+### /app/controllers/api/v1/recipes_controller.rb
 
 class Api::V1::RecipesController < ApplicationController
   # code goes here
@@ -175,10 +175,10 @@ It reads "AbstractController::ActionNotFound". I know what an action is. Actions
 
 So my expectation is correct. Next, let's build the simplest possible thing. The `index` action.
 
-# Adding the `index` action
+### Adding the `index` action
 
 
-# Appendix
+### Appendix
 - The other details were about the HTTP headers to be included in the request. Specifically `Content-Type: application/json` and `Accept: application/json`. I don't want to explain these here. Feel free to Google them.
 
 
