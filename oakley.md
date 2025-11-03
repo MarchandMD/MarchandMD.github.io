@@ -139,16 +139,13 @@ Ok, on to the details
 
 ## Send Update
 
+typing here and pushing the button will compose an email to me!
+
 <div style="max-width: 500px; margin: 20px 0;">
   <form action="mailto:michaeldavidmarchand@gmail.com" method="post" enctype="text/plain">
     <div style="margin-bottom: 12px;">
-      <label for="sender-name" style="display: block; font-weight: bold; margin-bottom: 4px;">Name:</label>
-      <input type="text" id="sender-name" name="sender-name" style="width: 100%; padding: 10px; border: 2px solid #ddd; border-radius: 6px; font-size: 14px;">
-    </div>
-
-    <div style="margin-bottom: 12px;">
       <label for="update-message" style="display: block; font-weight: bold; margin-bottom: 4px;">Oakley Update:</label>
-      <textarea id="update-message" name="update-message" rows="6" style="width: 100%; padding: 10px; border: 2px solid #ddd; border-radius: 6px; font-size: 14px; resize: vertical;"></textarea>
+      <textarea id="update-message" name="body" rows="6" style="width: 100%; padding: 10px; border: 2px solid #ddd; border-radius: 6px; font-size: 14px; resize: vertical;"></textarea>
     </div>
 
     <button type="submit" style="background-color: #4CAF50; color: white; padding: 12px 24px; border: none; border-radius: 6px; cursor: pointer; font-size: 16px;">Send Update</button>
