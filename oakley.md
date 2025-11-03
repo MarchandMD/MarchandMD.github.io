@@ -28,6 +28,9 @@ First, thanks for taking care of my little guy! He means the world to me! So you
 Ok, on to the details
 
 <hr>
+
+![Dog food](https://i5.walmartimages.com/asr/6330eeb9-355f-4c15-a1ca-0123137bb661.e3586a04d95295de5bf9f6798b2831ae.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF)
+
 ## Feeding
 
 > - 2x a day (after morning walk, after evening walk)
@@ -70,6 +73,13 @@ Ok, on to the details
 > - He humps a lot, so I'd discourage dog parks
 > - Sometimes strange men can spook him
 > - He sniffs and marks....a lot; I encourage this
+> - He's definitely dog-curious
+> - He's pretty indifferent to people, unless he isn't...
+> - Loves swimming if it's warmer
+> - Not a big fan of toys
+> - Big fan of sticks (especially if they have loose bark)
+> - May fetch if it's colder in the mornings
+> - Eats grass (I don't mind)
 
 <hr>
 
@@ -80,16 +90,22 @@ Ok, on to the details
 >
 > - He is chipped
 > - He does know the way home....
+>
+> Unsure? Call/text me
+
 
 <hr>
 
 ## Tricks/Commands
 
 - Sit
+  - Hand gesture: Palm up, pretend your shoving food in your face
 - Shake
 - "Other one" (after "Shake")
-- Kiss
-- Down
+- Kiss?
+  - Get yer face close to his so he can reach ya!
+  - No licks, usually just a reverse boop
+- Down!
   - while pointing to the ground
 - Bang!
   - Make a finger gun....may have to "shoot" him multiple times
@@ -100,10 +116,14 @@ Ok, on to the details
 - Up!Up!Up!
   - 3x all together; Say while pointing to a thing, and he'll jump up on the thing; car, rock, furniture...
 - Under
-  - He'll stick his head between your legs, from behind...expecting a treat
+  - Say while walking, if he's behind you
+  - Good command when bikes/runners/kids/suspicious dogs approaching
+  - He'll stick his head between your legs, from behind, expecting a treat
 - OFF!
   - Said authoritatively....he'll stop jumping, or dismount any furniture/thing...use sparingly
 - Go lay down!
   - If he's barking randomly and you want him to not do that; pair this with pointing in the general direction of his bed
 
 <hr>
+
+![A good boy](/assets/images/sleepy-boi.jpeg)
