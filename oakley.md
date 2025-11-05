@@ -35,6 +35,7 @@ Ok, on to the details
 
 - Wednesday -> Thursday morning: Lisa (feed 2x)
 - Thursday morning -> Thursday afternoon: Vladka
+- Thursday afternoon -> Thursday evening: Kara (walk)
 - Thursday evening: Hannah (feed 1x)
 - Friday morning: Vladka (feed 1x)
 
