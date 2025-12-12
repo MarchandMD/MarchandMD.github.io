@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Safe Navigation Operator
 tags: Ruby
 #date: 2021-08-24 16:54:42 -0600
