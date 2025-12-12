@@ -70,4 +70,6 @@ It's not possible to "upcase" nil, because nil isn't a String. So there's no met
 
 But that's no reason to crash the system.
 
-Since the thing before `&.` is nil, and the method after `&.` isn't defined for nil, let's just return `nil` instead of crashing out. 
+Since the thing before `&.` is nil, and the method after `&.` isn't defined for nil, let's just return `nil` instead of crashing out.
+
+
