@@ -13,6 +13,7 @@ This is a [now page](https://nownownow.com/about). It tells you what I'm current
 
 - Building and maintaining software as a full-stack engineer
 - Writing about what I'm learning on this blog
+- [IRL2](https://irl2-production.up.railway.app/) (which is an homage to [sf0](https://en.wikipedia.org/wiki/SFZero) and can still be found online, though decaying)
 
 ## Learning
 
@@ -26,11 +27,15 @@ This is a [now page](https://nownownow.com/about). It tells you what I'm current
 - Tropic of Cancer by Henry Miller (Read + audiobook simultaneously)
 - Composition of Outdoor Painting by Edgar Payne
 - Mythical Man Month
+- Design Patterns in Ruby: If LLMs/agents are good at identifying patterns, then I want to be good at telling them to write patterns
 
 ## Outside of Work
 
 - *(What else is going on?)*
-- [IRL2: An homage to SF0.org](https://irl2-production.up.railway.app/)
+- Considering relocation...
+- Cooking a lot of food
+- Walking/training my dog Oakley
+- Oil painting class
 
 ## Amuse-bouche
 
