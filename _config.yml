@@ -14,6 +14,7 @@ plugins:
   - jekyll-archives
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-timeago
 
 google_analytics: G-NXV2EVGJL1
 
