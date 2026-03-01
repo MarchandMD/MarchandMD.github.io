@@ -3,13 +3,10 @@
   {%- include head.html -%}
 
   <body>
-    <header>
-      {%- include header.html -%}
-    </header>
-    <nav>
-      {%- include navbar.html -%}
-    </nav>
+    {%- include header.html -%}
+    {%- include navbar.html -%}
     <main aria-label="Content">
+      {%- include breadcrumbs.html -%}
       {{ content }}
     </main>
     <footer>
