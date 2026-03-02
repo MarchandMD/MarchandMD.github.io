@@ -171,6 +171,33 @@ table {
   margin: 0;
 }
 
+// Post body — indent author text, keep quotes flush
+section[itemprop="articleBody"] {
+  > p, > ul, > ol {
+    margin-left: 2rem;
+  }
+}
+
+// Blockquote styling
+blockquote {
+  border-left: 4px solid #0969da;
+  background-color: #f6f8fa;
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  color: #444;
+  font-style: italic;
+  line-height: 1.7;
+  border-radius: 0 4px 4px 0;
+
+  p {
+    margin: 0;
+  }
+
+  p + p {
+    margin-top: 0.75rem;
+  }
+}
+
 .blog-pagination {
   display: flex;
   justify-content: space-between;
