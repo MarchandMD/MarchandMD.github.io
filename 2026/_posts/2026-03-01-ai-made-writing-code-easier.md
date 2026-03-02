@@ -7,6 +7,8 @@ tags:
 
 link to original: <a href="https://www.ivanturkovic.com/2026/02/25/ai-made-writing-code-easier-engineering-harder/" target="_blank">AI Made Writing Code Easier. It Made Being an Engineer Harder.</a>
 
+edit: HackerNews shows this as being written by AI. However, despite the source, my ability to be critical of the content stands. And I in fact did express some skepticism about this. So it's curious that this article has expressed a _softer_ perspective, a more humane perspective. I'm leaving the article up, as a lesson learned.
+
 > The expected output of a software engineer in 2026 is dramatically higher than it was in 2023. Not because anyone held a meeting and announced new targets. Not because your manager sat you down and explained the new rules. The baseline just moved.
 
 This is totally fair.

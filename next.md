@@ -8,4 +8,6 @@ title: Next
 Articles I plan to read and share my thoughts on.
 
 - *(Add links here as you find articles worth reading)*
-- **Added to this list: March 1, 2026** — [AI made writing code easier. It made being an Engineer Harder.](https://www.ivanturkovic.com/2026/02/25/ai-made-writing-code-easier-engineering-harder/){:target="_blank"}
+- [Relocating Rigor](https://aicoding.leaflet.pub/3mbrvhyye4k2e)
+- [Sisyphus versus the Conductor](https://obie.medium.com/sisyphus-versus-the-conductor-b2097f55dd9e)
+- [The last inch of Craft](https://www.rockoder.com/beyondthecode/the-last-inch-of-craft/)
