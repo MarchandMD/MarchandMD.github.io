@@ -26,7 +26,6 @@ This is a [now page](https://nownownow.com/about). It tells you what I'm current
 - *(What are you currently reading?)*
 - Tropic of Cancer by Henry Miller (Read + audiobook simultaneously)
 - Composition of Outdoor Painting by Edgar Payne
-- Mythical Man Month
 - Design Patterns in Ruby: If LLMs/agents are good at identifying patterns, then I want to be good at telling them to write patterns
 
 ## Outside of Work
