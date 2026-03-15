@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: The Programmer Identity Crisis
+title: My thoughts while reading "The Programmer Identity Crisis"
 tags:
 ---
 

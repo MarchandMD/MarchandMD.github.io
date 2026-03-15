@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Relocating Rigor
+title: My thoughts while reading "Relocating Rigor"
 tags:
 ---
 
